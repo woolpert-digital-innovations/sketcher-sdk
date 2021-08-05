@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WebView2Demo": {
+      "commandName": "Project",
+      "jsWebView2Debugging": false
+    }
+  }
+}

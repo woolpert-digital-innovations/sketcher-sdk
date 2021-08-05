@@ -1,0 +1,41 @@
+stages:
+  - build-browserdemo
+  - test
+  - tag-browserdemo
+
+default:
+  image: alpine:3.12
+
+build browserdemo container:
+  image: docker:latest
+  stage: build-browserdemo
+  script:
+    - cd examples/browser
+    - docker build -t ${BROWSERDEMO_IMAGE_NAME} .
+    - docker tag ${BROWSERDEMO_IMAGE_NAME} gcr.io/$GCR_PROJECT/${BROWSERDEMO_IMAGE_NAME}:$CI_COMMIT_SHA
+    - docker tag ${BROWSERDEMO_IMAGE_NAME} gcr.io/$GCR_PROJECT/${BROWSERDEMO_IMAGE_NAME}:$CI_COMMIT_SHORT_SHA
+    - echo $SERVICE_ACCOUNT | base64 -d | docker login -u _json_key --password-stdin https://gcr.io
+    - docker push gcr.io/$GCR_PROJECT/${BROWSERDEMO_IMAGE_NAME}:$CI_COMMIT_SHA
+    - docker push gcr.io/$GCR_PROJECT/${BROWSERDEMO_IMAGE_NAME}:$CI_COMMIT_SHORT_SHA
+    - mkdir image
+    - docker save -o image/app.tar ${BROWSERDEMO_IMAGE_NAME}
+  services:
+    - docker:dind
+  artifacts:
+    paths:
+      - image
+  only:
+    changes:
+      - examples/browser/**/*
+
+tag browserdemo release:
+  stage: tag-browserdemo
+  image: google/cloud-sdk
+  before_script:
+    - echo $SERVICE_ACCOUNT | base64 -d > /tmp/$CI_PIPELINE_ID.json
+    - gcloud auth activate-service-account --key-file=/tmp/$CI_PIPELINE_ID.json
+  script:
+    - cd examples/browser
+    - gcloud container images add-tag gcr.io/$GCR_PROJECT/${BROWSERDEMO_IMAGE_NAME}:$CI_COMMIT_SHA gcr.io/$GCR_PROJECT/${BROWSERDEMO_IMAGE_NAME}:$CI_COMMIT_TAG --quiet
+  only:
+    - tags

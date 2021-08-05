@@ -1,0 +1,2409 @@
+{
+  "version": "1.0",
+  "capabilities": {
+    "sketchNotes": {
+      "flag": "enabled",
+      "maxNoteLength": 500
+    },
+    "colorCustomization": {
+      "flag": "enabled"
+    },
+    "sketchOriginPosition": {
+      "flag": "enabled",
+      "origin": "bottomLeft"
+    },
+    "arcDrawing": {
+      "flag": "enabled"
+    }
+  },
+  "lookupCollection": {
+    "standard": {
+      "unspecified": {
+        "*": {
+          "name": "ALL TYPES",
+          "description": "ALL TYPES",
+          "ordinal": 1,
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "AC": {
+          "name": "CANOPY ALUM.",
+          "description": "CANOPY ALUM.",
+          "ordinal": 2,
+          "styles": {
+            "vector": {
+              "color": "#F52817",
+              "fill": "#D6FCAB",
+              "stroke": "#1B0C9C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "AE": {
+          "name": "AGGREGATE (WHITE ROCK)",
+          "description": "AGGREGATE (WHITE ROCK)",
+          "ordinal": 3,
+          "styles": {
+            "vector": {
+              "color": "#0A5221",
+              "fill": "#F8DCCB",
+              "stroke": "#B40A0A"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "BALC": {
+          "name": "BALCONY",
+          "description": "BALCONY",
+          "ordinal": 4,
+          "styles": {
+            "vector": {
+              "color": "#B30A0A",
+              "fill": "#F4F24E",
+              "stroke": "#D95907"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "BAS": {
+          "name": "BASEMENT",
+          "description": "BASEMENT",
+          "ordinal": 5,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "BAT": {
+          "name": "BANK AUTO TELLERS",
+          "description": "BANK AUTO TELLERS",
+          "ordinal": 6,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "BC": {
+          "name": "CORRUGATED DEM LUMBER BARN",
+          "description": "CORRUGATED DEM LUMBER BARN",
+          "ordinal": 7,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "BD": {
+          "name": "DAIRY BARN",
+          "description": "DAIRY BARN",
+          "ordinal": 8,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "BDA": {
+          "name": "BOAT DOCK / PIER",
+          "description": "BOAT DOCK / PIER",
+          "ordinal": 9,
+          "styles": {
+            "vector": {
+              "color": "#B30A0A",
+              "fill": "#F4F24E",
+              "stroke": "#D95907"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "BH": {
+          "name": "BOAT HOUSE",
+          "description": "BOAT HOUSE",
+          "ordinal": 10,
+          "styles": {
+            "vector": {
+              "color": "#4F0D52",
+              "fill": "#DAE54D",
+              "stroke": "#C43507"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "BM": {
+          "name": "BARN MASONRY",
+          "description": "BARN MASONRY",
+          "ordinal": 11,
+          "styles": {
+            "vector": {
+              "color": "#0A5221",
+              "fill": "#F8DCCB",
+              "stroke": "#B40A0A"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "BO": {
+          "name": "OPEN (CORRUGATED OPEN 4 SIDES)",
+          "description": "OPEN (CORRUGATED OPEN 4 SIDES)",
+          "ordinal": 12,
+          "styles": {
+            "vector": {
+              "color": "#5C4C95",
+              "fill": "#A7FEFB",
+              "stroke": "#900C3F"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "BP": {
+          "name": "POLE (CORRUGATED W/POSTS)",
+          "description": "POLE (CORRUGATED W/POSTS)",
+          "ordinal": 13,
+          "styles": {
+            "vector": {
+              "color": "#F52817",
+              "fill": "#D6FCAB",
+              "stroke": "#1B0C9C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "BPA": {
+          "name": "BARN",
+          "description": "BARN",
+          "ordinal": 14,
+          "styles": {
+            "vector": {
+              "color": "#0A5221",
+              "fill": "#F8DCCB",
+              "stroke": "#B40A0A"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "BS": {
+          "name": "BOAT SLIPS",
+          "description": "BOAT SLIPS",
+          "ordinal": 15,
+          "styles": {
+            "vector": {
+              "color": "#B30A0A",
+              "fill": "#F4F24E",
+              "stroke": "#D95907"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "BW": {
+          "name": "WOODEN BARN",
+          "description": "WOODEN BARN",
+          "ordinal": 16,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "BZ": {
+          "name": "BREEZEWAY",
+          "description": "BREEZEWAY",
+          "ordinal": 17,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "CB": {
+          "name": "CABANA",
+          "description": "CABANA",
+          "ordinal": 18,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "CBL": {
+          "name": "OUTDOOR LIVING",
+          "description": "OUTDOOR LIVING",
+          "ordinal": 19,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "CD": {
+          "name": "ROOF W/DIRT FLOOR",
+          "description": "ROOF W/DIRT FLOOR",
+          "ordinal": 20,
+          "styles": {
+            "vector": {
+              "color": "#B30A0A",
+              "fill": "#F4F24E",
+              "stroke": "#D95907"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "CF": {
+          "name": "CARPORT FREESTANDING",
+          "description": "CARPORT FREESTANDING",
+          "ordinal": 21,
+          "styles": {
+            "vector": {
+              "color": "#4F0D52",
+              "fill": "#DAE54D",
+              "stroke": "#C43507"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "CL": {
+          "name": "WALK-IN COOLER",
+          "description": "WALK-IN COOLER",
+          "ordinal": 22,
+          "styles": {
+            "vector": {
+              "color": "#0A5221",
+              "fill": "#F8DCCB",
+              "stroke": "#B40A0A"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "CMGE": {
+          "name": "COMM METAL GRAIN/FERT. ELEVATOR",
+          "description": "COMM METAL GRAIN/FERT. ELEVATOR",
+          "ordinal": 23,
+          "styles": {
+            "vector": {
+              "color": "#5C4C95",
+              "fill": "#A7FEFB",
+              "stroke": "#900C3F"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "CNPA": {
+          "name": "CANOPY (ALUM)",
+          "description": "CANOPY (ALUM)",
+          "ordinal": 24,
+          "styles": {
+            "vector": {
+              "color": "#F52817",
+              "fill": "#D6FCAB",
+              "stroke": "#1B0C9C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "CNPS": {
+          "name": "CANOPY (STEEL)",
+          "description": "CANOPY (STEEL)",
+          "ordinal": 25,
+          "styles": {
+            "vector": {
+              "color": "#0A5221",
+              "fill": "#F8DCCB",
+              "stroke": "#B40A0A"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "CNPY": {
+          "name": "CANOPY (PM)",
+          "description": "CANOPY (PM)",
+          "ordinal": 26,
+          "styles": {
+            "vector": {
+              "color": "#B30A0A",
+              "fill": "#F4F24E",
+              "stroke": "#D95907"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "CNV": {
+          "name": "CONVERTED",
+          "description": "CONVERTED",
+          "ordinal": 27,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "COOL": {
+          "name": "WALK-IN COOLER",
+          "description": "WALK-IN COOLER",
+          "ordinal": 28,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "CP": {
+          "name": "CARPORT",
+          "description": "CARPORT",
+          "ordinal": 29,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "CRN": {
+          "name": "CRANE WAY",
+          "description": "CRANE WAY",
+          "ordinal": 30,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "CW": {
+          "name": "CONCRETE WALK",
+          "description": "CONCRETE WALK",
+          "ordinal": 31,
+          "styles": {
+            "vector": {
+              "color": "#B30A0A",
+              "fill": "#F4F24E",
+              "stroke": "#D95907"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "CWB": {
+          "name": "CAR WASH BAY",
+          "description": "CAR WASH BAY",
+          "ordinal": 32,
+          "styles": {
+            "vector": {
+              "color": "#4F0D52",
+              "fill": "#DAE54D",
+              "stroke": "#C43507"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "DK": {
+          "name": "DOCK",
+          "description": "DOCK",
+          "ordinal": 33,
+          "styles": {
+            "vector": {
+              "color": "#336600",
+              "fill": "#4dffff",
+              "stroke": "#004d4d"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "FB": {
+          "name": "FISHING BARGE",
+          "description": "FISHING BARGE",
+          "ordinal": 34,
+          "styles": {
+            "vector": {
+              "color": "#5C4C95",
+              "fill": "#A7FEFB",
+              "stroke": "#900C3F"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "FC": {
+          "name": "FREE STANDING",
+          "description": "FREE STANDING",
+          "ordinal": 35,
+          "styles": {
+            "vector": {
+              "color": "#F52817",
+              "fill": "#D6FCAB",
+              "stroke": "#1B0C9C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "GA": {
+          "name": "ATTACHED",
+          "description": "ATTACHED",
+          "ordinal": 36,
+          "styles": {
+            "vector": {
+              "color": "#0A5221",
+              "fill": "#F8DCCB",
+              "stroke": "#B40A0A"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "GA1": {
+          "name": "GARAGE",
+          "description": "GARAGE",
+          "ordinal": 37,
+          "styles": {
+            "vector": {
+              "color": "#B30A0A",
+              "fill": "#F4F24E",
+              "stroke": "#D95907"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "GD": {
+          "name": "DIRT FLOOR",
+          "description": "DIRT FLOOR",
+          "ordinal": 38,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "GE": {
+          "name": "GARAGE ENCLOSED",
+          "description": "GARAGE ENCLOSED",
+          "ordinal": 39,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "GF": {
+          "name": "GARAGE FREESTANDING",
+          "description": "GARAGE FREESTANDING",
+          "ordinal": 40,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "GH": {
+          "name": "GREENHOUSE",
+          "description": "GREENHOUSE",
+          "ordinal": 41,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "GP": {
+          "name": "GRAVEL PARKING LOT",
+          "description": "GRAVEL PARKING LOT",
+          "ordinal": 42,
+          "styles": {
+            "vector": {
+              "color": "#B30A0A",
+              "fill": "#F4F24E",
+              "stroke": "#D95907"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "GZA": {
+          "name": "GAZEBO",
+          "description": "GAZEBO",
+          "ordinal": 43,
+          "styles": {
+            "vector": {
+              "color": "#4F0D52",
+              "fill": "#DAE54D",
+              "stroke": "#C43507"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "GZL": {
+          "name": "GAZEBO LOW",
+          "description": "GAZEBO LOW",
+          "ordinal": 44,
+          "styles": {
+            "vector": {
+              "color": "#0A5221",
+              "fill": "#F8DCCB",
+              "stroke": "#B40A0A"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "HAYLG": {
+          "name": "HAY LOFT",
+          "description": "HAY LOFT",
+          "ordinal": 45,
+          "styles": {
+            "vector": {
+              "color": "#5C4C95",
+              "fill": "#A7FEFB",
+              "stroke": "#900C3F"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "HBA": {
+          "name": "BARN / STABLES",
+          "description": "BARN / STABLES",
+          "ordinal": 46,
+          "styles": {
+            "vector": {
+              "color": "#F52817",
+              "fill": "#D6FCAB",
+              "stroke": "#1B0C9C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "HT": {
+          "name": "HOT TUB",
+          "description": "HOT TUB",
+          "ordinal": 47,
+          "styles": {
+            "vector": {
+              "color": "#0A5221",
+              "fill": "#F8DCCB",
+              "stroke": "#B40A0A"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MA": {
+          "name": "MAIN AREA",
+          "description": "MAIN AREA",
+          "ordinal": 48,
+          "styles": {
+            "vector": {
+              "color": "#B30A0A",
+              "fill": "#F4F24E",
+              "stroke": "#D95907"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MA2": {
+          "name": "MAIN AREA - 2ND LEVEL",
+          "description": "MAIN AREA - 2ND LEVEL",
+          "ordinal": 49,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MA3": {
+          "name": "MAIN AREA - 3RD LEVEL",
+          "description": "MAIN AREA - 3RD LEVEL",
+          "ordinal": 50,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MA4": {
+          "name": "MAIN AREA 4TH",
+          "description": "MAIN AREA 4TH",
+          "ordinal": 51,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MA5": {
+          "name": "MAIN AREA 5TH",
+          "description": "MAIN AREA 5TH",
+          "ordinal": 52,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MA6": {
+          "name": "MAIN AREA 6TH",
+          "description": "MAIN AREA 6TH",
+          "ordinal": 53,
+          "styles": {
+            "vector": {
+              "color": "#B30A0A",
+              "fill": "#F4F24E",
+              "stroke": "#D95907"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MA7": {
+          "name": "MAIN AREA 7TH",
+          "description": "MAIN AREA 7TH",
+          "ordinal": 54,
+          "styles": {
+            "vector": {
+              "color": "#4F0D52",
+              "fill": "#DAE54D",
+              "stroke": "#C43507"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MA8": {
+          "name": "MAIN AREA 8TH",
+          "description": "MAIN AREA 8TH",
+          "ordinal": 55,
+          "styles": {
+            "vector": {
+              "color": "#0A5221",
+              "fill": "#F8DCCB",
+              "stroke": "#B40A0A"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MAA": {
+          "name": "LIVING AREA ANNEX",
+          "description": "LIVING AREA ANNEX",
+          "ordinal": 56,
+          "styles": {
+            "vector": {
+              "color": "#5C4C95",
+              "fill": "#A7FEFB",
+              "stroke": "#900C3F"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MEZ": {
+          "name": "MEZZANINE",
+          "description": "MEZZANINE",
+          "ordinal": 57,
+          "styles": {
+            "vector": {
+              "color": "#F52817",
+              "fill": "#D6FCAB",
+              "stroke": "#1B0C9C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MEZD": {
+          "name": "MEZZANINE (DISPLAY)",
+          "description": "MEZZANINE (DISPLAY)",
+          "ordinal": 58,
+          "styles": {
+            "vector": {
+              "color": "#0A5221",
+              "fill": "#F8DCCB",
+              "stroke": "#B40A0A"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MEZS": {
+          "name": "MEZZANINE (STORAGE)",
+          "description": "MEZZANINE (STORAGE)",
+          "ordinal": 59,
+          "styles": {
+            "vector": {
+              "color": "#B30A0A",
+              "fill": "#F4F24E",
+              "stroke": "#D95907"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MH - O": {
+          "name": "MH - OTHER",
+          "description": "MH - OTHER",
+          "ordinal": 60,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PA": {
+          "name": "ALUMINUM COVERED SLAB",
+          "description": "ALUMINUM COVERED SLAB",
+          "ordinal": 61,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PAT": {
+          "name": "PATIO, PORCH, NO ROOF",
+          "description": "PATIO, PORCH, NO ROOF",
+          "ordinal": 62,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PC": {
+          "name": "PATIO COVER",
+          "description": "PATIO COVER",
+          "ordinal": 63,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PCO": {
+          "name": "POOR CONDITION OUT BUILDINGS",
+          "description": "POOR CONDITION OUT BUILDINGS",
+          "ordinal": 64,
+          "styles": {
+            "vector": {
+              "color": "#B30A0A",
+              "fill": "#F4F24E",
+              "stroke": "#D95907"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PCR": {
+          "name": "POOR CONDITION RESIDENCE",
+          "description": "POOR CONDITION RESIDENCE",
+          "ordinal": 65,
+          "styles": {
+            "vector": {
+              "color": "#4F0D52",
+              "fill": "#DAE54D",
+              "stroke": "#C43507"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PD": {
+          "name": "POOL DECKING",
+          "description": "POOL DECKING",
+          "ordinal": 66,
+          "styles": {
+            "vector": {
+              "color": "#0A5221",
+              "fill": "#F8DCCB",
+              "stroke": "#B40A0A"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PE": {
+          "name": "ENCLOSED PORCH/PATIO",
+          "description": "ENCLOSED PORCH/PATIO",
+          "ordinal": 67,
+          "styles": {
+            "vector": {
+              "color": "#5C4C95",
+              "fill": "#A7FEFB",
+              "stroke": "#900C3F"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PF": {
+          "name": "FIBERGLASS COVERED SLAB",
+          "description": "FIBERGLASS COVERED SLAB",
+          "ordinal": 68,
+          "styles": {
+            "vector": {
+              "color": "#F52817",
+              "fill": "#D6FCAB",
+              "stroke": "#1B0C9C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PG": {
+          "name": "GLASSED ENCLOSED PORCH/PATIO",
+          "description": "GLASSED ENCLOSED PORCH/PATIO",
+          "ordinal": 69,
+          "styles": {
+            "vector": {
+              "color": "#0A5221",
+              "fill": "#F8DCCB",
+              "stroke": "#B40A0A"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PIER": {
+          "name": "PIER - WOOD WALKWAY",
+          "description": "PIER - WOOD WALKWAY",
+          "ordinal": 70,
+          "styles": {
+            "vector": {
+              "color": "#B30A0A",
+              "fill": "#F4F24E",
+              "stroke": "#D95907"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PL": {
+          "name": "SLAB ONLY",
+          "description": "SLAB ONLY",
+          "ordinal": 71,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PLL": {
+          "name": "PORCH, PATIO, SLAB, ETC",
+          "description": "PORCH, PATIO, SLAB, ETC",
+          "ordinal": 72,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PM": {
+          "name": "PRE-ENGINEERED METAL BLDG",
+          "description": "PRE-ENGINEERED METAL BLDG",
+          "ordinal": 73,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PMA": {
+          "name": "METAL BUILDING",
+          "description": "METAL BUILDING",
+          "ordinal": 74,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PME": {
+          "name": "PME (PRE-ENG METAL BLDG)",
+          "description": "PME (PRE-ENG METAL BLDG)",
+          "ordinal": 75,
+          "styles": {
+            "vector": {
+              "color": "#B30A0A",
+              "fill": "#F4F24E",
+              "stroke": "#D95907"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PO": {
+          "name": "OPEN PORCH W/ROOF",
+          "description": "OPEN PORCH W/ROOF",
+          "ordinal": 76,
+          "styles": {
+            "vector": {
+              "color": "#4F0D52",
+              "fill": "#DAE54D",
+              "stroke": "#C43507"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PS": {
+          "name": "SCREEN PORCH/PATIO",
+          "description": "SCREEN PORCH/PATIO",
+          "ordinal": 77,
+          "styles": {
+            "vector": {
+              "color": "#0A5221",
+              "fill": "#F8DCCB",
+              "stroke": "#B40A0A"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PSA": {
+          "name": "SUN PORCH",
+          "description": "SUN PORCH",
+          "ordinal": 78,
+          "styles": {
+            "vector": {
+              "color": "#5C4C95",
+              "fill": "#A7FEFB",
+              "stroke": "#900C3F"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PSO": {
+          "name": "PATIO SLAB-NO ROOF",
+          "description": "PATIO SLAB-NO ROOF",
+          "ordinal": 79,
+          "styles": {
+            "vector": {
+              "color": "#F52817",
+              "fill": "#D6FCAB",
+              "stroke": "#1B0C9C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PW": {
+          "name": "WOOD FLOOR W/ROOF",
+          "description": "WOOD FLOOR W/ROOF",
+          "ordinal": 80,
+          "styles": {
+            "vector": {
+              "color": "#0A5221",
+              "fill": "#F8DCCB",
+              "stroke": "#B40A0A"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "RC": {
+          "name": "RC",
+          "description": "RC",
+          "ordinal": 81,
+          "styles": {
+            "vector": {
+              "color": "#336600",
+              "fill": "#6666ff",
+              "stroke": "#b30000"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "RC1": {
+          "name": "RC1",
+          "description": "RC1",
+          "ordinal": 82,
+          "styles": {
+            "vector": {
+              "color": "#808000",
+              "fill": "#d9ff66",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "RK": {
+          "name": "ROCK PARKING LOT",
+          "description": "ROCK PARKING LOT",
+          "ordinal": 83,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "ROFFICEA": {
+          "name": "RESIDENTIAL OFFICE",
+          "description": "RESIDENTIAL OFFICE",
+          "ordinal": 84,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "SC": {
+          "name": "SCALES",
+          "description": "SCALES",
+          "ordinal": 85,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "SD": {
+          "name": "POLE (WOODEN)",
+          "description": "POLE (WOODEN)",
+          "ordinal": 86,
+          "styles": {
+            "vector": {
+              "color": "#B30A0A",
+              "fill": "#F4F24E",
+              "stroke": "#D95907"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "SDK": {
+          "name": "STONE DECK",
+          "description": "STONE DECK",
+          "ordinal": 87,
+          "styles": {
+            "vector": {
+              "color": "#4F0D52",
+              "fill": "#DAE54D",
+              "stroke": "#C43507"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "SI": {
+          "name": "SITE IMP",
+          "description": "SITE IMP",
+          "ordinal": 88,
+          "styles": {
+            "vector": {
+              "color": "#ff6600",
+              "fill": "#ffff66",
+              "stroke": "#003311"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "SLAB": {
+          "name": "CONCRETE SLAB",
+          "description": "CONCRETE SLAB",
+          "ordinal": 89,
+          "styles": {
+            "vector": {
+              "color": "#5C4C95",
+              "fill": "#A7FEFB",
+              "stroke": "#900C3F"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "SLRP": {
+          "name": "SOLAR PANEL SYSTEM COMPLETE",
+          "description": "SOLAR PANEL SYSTEM COMPLETE",
+          "ordinal": 90,
+          "styles": {
+            "vector": {
+              "color": "#F52817",
+              "fill": "#D6FCAB",
+              "stroke": "#1B0C9C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "SOLAR / WIND": {
+          "name": "SOLAR/WIND EQUIPMENT",
+          "description": "SOLAR/WIND EQUIPMENT",
+          "ordinal": 91,
+          "styles": {
+            "vector": {
+              "color": "#0A5221",
+              "fill": "#F8DCCB",
+              "stroke": "#B40A0A"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "SP": {
+          "name": "SWIMMING POOL",
+          "description": "SWIMMING POOL",
+          "ordinal": 92,
+          "styles": {
+            "vector": {
+              "color": "#B30A0A",
+              "fill": "#F4F24E",
+              "stroke": "#D95907"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "SR": {
+          "name": "STOREROOM",
+          "description": "STOREROOM",
+          "ordinal": 93,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "SS": {
+          "name": "STORAGE SHEDS",
+          "description": "STORAGE SHEDS",
+          "ordinal": 94,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "SSA": {
+          "name": "STG SHED/WORKSHOP",
+          "description": "STG SHED/WORKSHOP",
+          "ordinal": 95,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "STG": {
+          "name": "STORAGE",
+          "description": "STORAGE",
+          "ordinal": 96,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "SW": {
+          "name": "WORKSHOP",
+          "description": "WORKSHOP",
+          "ordinal": 97,
+          "styles": {
+            "vector": {
+              "color": "#B30A0A",
+              "fill": "#F4F24E",
+              "stroke": "#D95907"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "TC": {
+          "name": "TENNIS COURT",
+          "description": "TENNIS COURT",
+          "ordinal": 98,
+          "styles": {
+            "vector": {
+              "color": "#4F0D52",
+              "fill": "#DAE54D",
+              "stroke": "#C43507"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "WD": {
+          "name": "WOOD DECK - NO ROOF",
+          "description": "WOOD DECK - NO ROOF",
+          "ordinal": 99,
+          "styles": {
+            "vector": {
+              "color": "#0A5221",
+              "fill": "#F8DCCB",
+              "stroke": "#B40A0A"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "WDA": {
+          "name": "WOOD DECK",
+          "description": "WOOD DECK",
+          "ordinal": 100,
+          "styles": {
+            "vector": {
+              "color": "#995c00",
+              "fill": "#4dff4d",
+              "stroke": "#900C3F"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "WTRTANK": {
+          "name": "WTRTANK (PER GALLON)",
+          "description": "WTRTANK (PER GALLON)",
+          "ordinal": 101,
+          "styles": {
+            "vector": {
+              "color": "#F52817",
+              "fill": "#D6FCAB",
+              "stroke": "#1B0C9C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "WTRTOWER": {
+          "name": "WATER TOWER (PER GALLON)",
+          "description": "WATER TOWER (PER GALLON)",
+          "ordinal": 102,
+          "styles": {
+            "vector": {
+              "color": "#0A5221",
+              "fill": "#F8DCCB",
+              "stroke": "#B40A0A"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        }
+      }
+    },
+    "outbuilding": {
+      "outbuilding": {}
+    }
+  },
+  "strokes": [
+    {
+      "name": "green",
+      "value": "#9FE2BF"
+    },
+    {
+      "name": "aqua",
+      "value": "#40E0D0"
+    },
+    {
+      "name": "blue",
+      "value": "#6495ED"
+    },
+    {
+      "name": "purple",
+      "value": "#CCCCFF"
+    },
+    {
+      "name": "red",
+      "value": "#DE3163"
+    },
+    {
+      "name": "orange",
+      "value": "#FF7F50"
+    }
+  ],
+  "strokeWidths": [
+    {
+      "name": "1",
+      "value": 1
+    },
+    {
+      "name": "2",
+      "value": 2
+    },
+    {
+      "name": "3",
+      "value": 3
+    },
+    {
+      "name": "4",
+      "value": 4
+    },
+    {
+      "name": "5",
+      "value": 5
+    },
+    {
+      "name": "6",
+      "value": 6
+    }
+  ],
+  "strokeDashArrays": [
+    {
+      "name": "none",
+      "value": []
+    },
+    {
+      "name": "one",
+      "value": [
+        10,
+        10
+      ]
+    },
+    {
+      "name": "two",
+      "value": [
+        10,
+        2,
+        2
+      ]
+    },
+    {
+      "name": "three",
+      "value": [
+        20,
+        5
+      ]
+    }
+  ],
+  "fills": [
+    {
+      "name": "green",
+      "value": "#9FE2BF"
+    },
+    {
+      "name": "aqua",
+      "value": "#40E0D0"
+    },
+    {
+      "name": "blue",
+      "value": "#6495ED"
+    },
+    {
+      "name": "purple",
+      "value": "#CCCCFF"
+    },
+    {
+      "name": "red",
+      "value": "#DE3163"
+    },
+    {
+      "name": "orange",
+      "value": "#FF7F50"
+    }
+  ],
+  "fillPatterns": [
+    {
+      "name": "None",
+      "value": "none"
+    },
+    {
+      "name": "Diagonal",
+      "value": {
+        "height": 10,
+        "width": 10,
+        "elements": [
+          {
+            "path": "M-1,1 l2,-2 M0,10 l10,-10 M9,11 l2,-2",
+            "style": {
+              "stroke": "#000",
+              "strokeWidth": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cross Hatch",
+      "value": {
+        "height": 15,
+        "width": 15,
+        "elements": [
+          {
+            "path": "M0,0 l15,15 M15,0 l-15,15",
+            "style": {
+              "stroke": "#000",
+              "strokeWidth": 2
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

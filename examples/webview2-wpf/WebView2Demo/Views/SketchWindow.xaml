@@ -1,0 +1,21 @@
+﻿<Window x:Class="WebView2Demo.Views.SketchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:local="clr-namespace:WebView2Demo.Views"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        Loaded="Window_Loaded"
+        Closed="Window_Closed"
+        Title="SketchWindow" Height="450" Width="800">
+    <Grid>
+
+        <wv2:WebView2 Name="WebView" Source="{Binding Url}"
+                      NavigationCompleted="WebView_NavigationCompleted"
+                      WebMessageReceived="WebView_WebMessageReceived" >
+        </wv2:WebView2>
+    </Grid>
+</Window>

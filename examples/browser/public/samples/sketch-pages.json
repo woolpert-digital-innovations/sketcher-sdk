@@ -1,0 +1,956 @@
+{
+  "$schema": "https://schemas.opencamadata.org/0.9/data.schema.json",
+  "sketches": [
+    {
+      "id": 1,
+      "label": "Building #1",
+      "segments": [
+        {
+          "id": -312186345362,
+          "label": {
+            "text": "[1] MAIN AREA",
+            "values": [
+              {
+                "text": "MAIN AREA",
+                "lookupCode": "MA",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 16,
+              "y": 30
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[1] MAIN AREA",
+                "values": [
+                  {
+                    "text": "MAIN AREA",
+                    "lookupCode": "MA",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 16,
+                  "y": 30
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 420,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 82,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 6,
+                  "y": 38
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -20
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 21,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 20
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -21,
+                      "y": 0
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 420,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 82,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -312186345362,
+          "label": {
+            "text": "[2] MAIN AREA - 2ND LEVEL",
+            "values": [
+              {
+                "text": "MAIN AREA - 2ND LEVEL",
+                "lookupCode": "MA2",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 47,
+              "y": 29
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[2] MAIN AREA - 2ND LEVEL",
+                "values": [
+                  {
+                    "text": "MAIN AREA - 2ND LEVEL",
+                    "lookupCode": "MA2",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 47,
+                  "y": 29
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 546,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 94,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 37,
+                  "y": 40
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 21,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -26
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -21,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 26
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 546,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 94,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -312186345362,
+          "label": {
+            "text": "[3] CONCRETE SLAB",
+            "values": [
+              {
+                "text": "CONCRETE SLAB",
+                "lookupCode": "SLAB",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 47,
+              "y": 12
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[3] CONCRETE SLAB",
+                "values": [
+                  {
+                    "text": "CONCRETE SLAB",
+                    "lookupCode": "SLAB",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 47,
+                  "y": 12
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 105,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 52,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 37,
+                  "y": 14
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 21,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -5
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -21,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 5
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 105,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 52,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -312185617052,
+          "label": {
+            "text": "[4] MAIN AREA - 2ND LEVEL",
+            "values": [
+              {
+                "text": "MAIN AREA - 2ND LEVEL",
+                "lookupCode": "MA2",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 72,
+              "y": 29
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[4] MAIN AREA - 2ND LEVEL",
+                "values": [
+                  {
+                    "text": "MAIN AREA - 2ND LEVEL",
+                    "lookupCode": "MA2",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 72,
+                  "y": 29
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 442,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 86,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 63,
+                  "y": 40
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 17,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -26
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -17,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 26
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 442,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 86,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -312185617052,
+          "label": {
+            "text": "[5] WOOD DECK",
+            "values": [
+              {
+                "text": "WOOD DECK",
+                "lookupCode": "WDA",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 82,
+              "y": 35
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[5] WOOD DECK",
+                "values": [
+                  {
+                    "text": "WOOD DECK",
+                    "lookupCode": "WDA",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 82,
+                  "y": 35
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 104,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 60,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 80,
+                  "y": 40
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 4,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -26
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -4,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 26
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 104,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 60,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -312185617052,
+          "label": {
+            "text": "[6] BARN MASONRY",
+            "values": [
+              {
+                "text": "BARN MASONRY",
+                "lookupCode": "BM",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 101,
+              "y": 30
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[6] BARN MASONRY",
+                "values": [
+                  {
+                    "text": "BARN MASONRY",
+                    "lookupCode": "BM",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 101,
+                  "y": 30
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 418,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 82,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 90,
+                  "y": 37
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 22,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -19
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -22,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 19
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 418,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 82,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -312185617051,
+          "label": {
+            "text": "[7] STORAGE",
+            "values": [
+              {
+                "text": "STORAGE",
+                "lookupCode": "STG",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 31,
+              "y": 12
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[7] STORAGE",
+                "values": [
+                  {
+                    "text": "STORAGE",
+                    "lookupCode": "STG",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 31,
+                  "y": 12
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 56,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 30,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 28,
+                  "y": 18
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 7,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -8
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -7,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 8
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 56,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 30,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -312169569759,
+          "label": {
+            "text": "[8] MAIN AREA 5TH",
+            "values": [
+              {
+                "text": "MAIN AREA 5TH",
+                "lookupCode": "MA5",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 54,
+              "y": 30
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[8] MAIN AREA 5TH",
+                "values": [
+                  {
+                    "text": "MAIN AREA 5TH",
+                    "lookupCode": "MA5",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 54,
+                  "y": 30
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 221,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 60,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 45,
+                  "y": 36
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 17,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -13
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -17,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 13
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 2,
+          "area": {
+            "value": 221,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 60,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -312169569759,
+          "label": {
+            "text": "[9] MAIN AREA - 2ND LEVEL",
+            "values": [
+              {
+                "text": "MAIN AREA - 2ND LEVEL",
+                "lookupCode": "MA2",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 63,
+              "y": 30
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[9] MAIN AREA - 2ND LEVEL",
+                "values": [
+                  {
+                    "text": "MAIN AREA - 2ND LEVEL",
+                    "lookupCode": "MA2",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 63,
+                  "y": 30
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 252,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 66,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 52,
+                  "y": 36
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 21,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -12
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -21,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 12
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 3,
+          "area": {
+            "value": 252,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 66,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        }
+      ],
+      "notes": [
+        {
+          "keycode": "1/0",
+          "text": "Main Condo Strip",
+          "position": {
+            "x": 49,
+            "y": 44
+          },
+          "page": 1
+        },
+        {
+          "keycode": "1/1",
+          "text": "Secondary Condo Strip",
+          "position": {
+            "x": 46,
+            "y": 41
+          },
+          "page": 2
+        },
+        {
+          "keycode": "1/2",
+          "text": "Office Building",
+          "position": {
+            "x": 58,
+            "y": 40
+          },
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Building #2",
+      "segments": [],
+      "notes": []
+    },
+    {
+      "id": 3,
+      "label": "Building #3",
+      "segments": [],
+      "notes": []
+    }
+  ],
+  "unitOfMeasure": "feet",
+  "lookupCollection": {
+    "standard": {
+      "unspecified": {
+        "BM": {
+          "name": "BARN MASONRY",
+          "description": "BARN MASONRY",
+          "ordinal": 11,
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MA": {
+          "name": "MAIN AREA",
+          "description": "MAIN AREA",
+          "ordinal": 48,
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MA2": {
+          "name": "MAIN AREA - 2ND LEVEL",
+          "description": "MAIN AREA - 2ND LEVEL",
+          "ordinal": 49,
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MA5": {
+          "name": "MAIN AREA 5TH",
+          "description": "MAIN AREA 5TH",
+          "ordinal": 52,
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "SLAB": {
+          "name": "CONCRETE SLAB",
+          "description": "CONCRETE SLAB",
+          "ordinal": 89,
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "STG": {
+          "name": "STORAGE",
+          "description": "STORAGE",
+          "ordinal": 96,
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "WDA": {
+          "name": "WOOD DECK",
+          "description": "WOOD DECK",
+          "ordinal": 100,
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        }
+      }
+    }
+  }
+}

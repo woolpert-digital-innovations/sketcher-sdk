@@ -1,0 +1,1647 @@
+{
+  "$schema": "https://schemas.opencamadata.org/0.9/data.schema.json",
+  "sketches": [
+    {
+      "id": 1,
+      "label": "Building #1",
+      "segments": [
+        {
+          "id": -312602253533,
+          "label": {
+            "text": "[1] SITE IMP",
+            "values": [
+              {
+                "text": "SITE IMP",
+                "lookupCode": "SI",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 24,
+              "y": 10
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[1] SITE IMP",
+                "values": [
+                  {
+                    "text": "SITE IMP",
+                    "lookupCode": "SI",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 24,
+                  "y": 10
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 48,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 28,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 28,
+                  "y": 7
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": -8,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 6
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 8,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -6
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 48,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 28,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -312602253534,
+          "label": {
+            "text": "[2] RESIDENTIAL OFFICE",
+            "values": [
+              {
+                "text": "RESIDENTIAL OFFICE",
+                "lookupCode": "ROFFICEA",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 40,
+              "y": 27
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[2] RESIDENTIAL OFFICE",
+                "values": [
+                  {
+                    "text": "RESIDENTIAL OFFICE",
+                    "lookupCode": "ROFFICEA",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 40,
+                  "y": 27
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 2056,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 234,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 20,
+                  "y": 13
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 9
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -8,
+                      "y": 4
+                    }
+                  },
+                  {
+                    "arc": {
+                      "h": 3,
+                      "x": 0,
+                      "y": 8
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 8,
+                      "y": 3
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 15
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 2,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 2,
+                      "y": 6
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 6,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 2,
+                      "y": -6
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 2,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -10
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 28,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -6
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 1,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -8
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 7,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 3
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 8,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "arc": {
+                      "h": 2.6,
+                      "x": 9,
+                      "y": -8,
+                      "direction": "counterclockwise"
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -12,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -22
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -20,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 6
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -11,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 1
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -16,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 5
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -8,
+                      "y": 0
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 2158.05,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 256,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -312602253535,
+          "label": {
+            "text": "[3] DOCK",
+            "values": [
+              {
+                "text": "DOCK",
+                "lookupCode": "DK",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 38,
+              "y": 47
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[3] DOCK",
+                "values": [
+                  {
+                    "text": "DOCK",
+                    "lookupCode": "DK",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 38,
+                  "y": 47
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 63,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 32,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 34,
+                  "y": 42
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 9
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 7,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -9
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -7,
+                      "y": 0
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 63,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 32,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -312602253536,
+          "label": {
+            "text": "[4] STORAGE",
+            "values": [
+              {
+                "text": "STORAGE",
+                "lookupCode": "STG",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 52,
+              "y": 47
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[4] STORAGE",
+                "values": [
+                  {
+                    "text": "STORAGE",
+                    "lookupCode": "STG",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 52,
+                  "y": 47
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 189,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 60,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 41,
+                  "y": 42
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 9
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 11,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "arc": {
+                      "h": 1.5,
+                      "x": 10,
+                      "y": 0,
+                      "direction": "counterclockwise"
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -9
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -21,
+                      "y": 0
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 178.82,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 60,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -312602253537,
+          "label": {
+            "text": "[5] RC1",
+            "values": [
+              {
+                "text": "RC1",
+                "lookupCode": "RC1",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 68,
+              "y": 37
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[5] RC1",
+                "values": [
+                  {
+                    "text": "RC1",
+                    "lookupCode": "RC1",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 68,
+                  "y": 37
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 236,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 78,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 78,
+                  "y": 31
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": -8,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -3
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -7,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 8
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -1,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 15
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 6,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "arc": {
+                      "h": 3,
+                      "x": 5,
+                      "y": -7
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 5,
+                      "y": -3
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -10
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 294.78,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 72.4,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -312602253538,
+          "label": {
+            "text": "[6] WOOD DECK",
+            "values": [
+              {
+                "text": "WOOD DECK",
+                "lookupCode": "WDA",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 49,
+              "y": 63
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[6] WOOD DECK",
+                "values": [
+                  {
+                    "text": "WOOD DECK",
+                    "lookupCode": "WDA",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 49,
+                  "y": 63
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 424,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 90,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 45,
+                  "y": 51
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 4
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -4,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 17
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 24,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -17
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -16,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -4
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -4,
+                      "y": 0
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 424,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 90,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -312602253539,
+          "label": {
+            "text": "[7] RC",
+            "values": [
+              {
+                "text": "RC",
+                "lookupCode": "RC",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 53,
+              "y": 78
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[7] RC",
+                "values": [
+                  {
+                    "text": "RC",
+                    "lookupCode": "RC",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 53,
+                  "y": 78
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 144,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 48,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 47,
+                  "y": 72
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 12
+                    }
+                  },
+                  {
+                    "arc": {
+                      "h": 2,
+                      "x": 12,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -12
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -12,
+                      "y": 0
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 160.35,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 48,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -303558454674,
+          "label": {
+            "text": "[8] R.E. CABANA ++",
+            "values": [
+              {
+                "text": "R.E. CABANA ++",
+                "lookupCode": "CB",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 104.5,
+              "y": 46.8
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[8] R.E. CABANA ++",
+                "values": [
+                  {
+                    "text": "R.E. CABANA ++",
+                    "lookupCode": "CB",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 104.5,
+                  "y": 46.8
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 795,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 103.2,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 99.8923,
+                  "y": 63.0593
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 14.7721,
+                      "y": -2.6046
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 6.9532,
+                      "y": -12.3958
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -5.5592,
+                      "y": -14.2511
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -13.8444,
+                      "y": -3.6514
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -12.7454,
+                      "y": 8.3399
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -0.3497,
+                      "y": 15.293
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 10.7734,
+                      "y": 9.2701
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 795,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 103.2,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        }
+      ],
+      "notes": [
+        {
+          "keycode": "1/0",
+          "text": "This is concreted, not personal prop.",
+          "position": {
+            "x": 86,
+            "y": 67
+          },
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Building #2",
+      "segments": [
+        {
+          "id": -303558454674,
+          "label": {
+            "text": "[1] BANK BARN",
+            "values": [
+              {
+                "text": "BANK BARN",
+                "lookupCode": "BD",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 35.4,
+              "y": 16.4
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[1] BANK BARN",
+                "values": [
+                  {
+                    "text": "BANK BARN",
+                    "lookupCode": "BD",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 35.4,
+                  "y": 16.4
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 1395.47,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 198.8,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 5,
+                  "y": 25
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -23
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 24,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 8
+                    }
+                  },
+                  {
+                    "arc": {
+                      "h": 1,
+                      "x": 4,
+                      "y": 2
+                    }
+                  },
+                  {
+                    "arc": {
+                      "h": 2,
+                      "x": 6,
+                      "y": 0,
+                      "direction": "counterclockwise"
+                    }
+                  },
+                  {
+                    "arc": {
+                      "h": 1,
+                      "x": 4,
+                      "y": -2
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -8
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 20,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 27
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -20,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 6
+                    }
+                  },
+                  {
+                    "arc": {
+                      "h": 3,
+                      "x": -14,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -10
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -24,
+                      "y": 0
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 1395.47,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 198.8,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -303558454674,
+          "label": {
+            "text": "[2] Open",
+            "values": [
+              {
+                "text": "Open",
+                "lookupCode": "BD",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 52,
+              "y": 20.1
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[2] Open",
+                "values": [
+                  {
+                    "text": "Open",
+                    "lookupCode": "BD",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 52,
+                  "y": 20.1
+                }
+              },
+              "areaType": "negative",
+              "drawingType": "sketched",
+              "area": {
+                "value": -77.2,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 31.799999999999997,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 50,
+                  "y": 25
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 4,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 2.8283,
+                      "y": -2.8283
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -4
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -2.8283,
+                      "y": -2.8285
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -4,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -2.8283,
+                      "y": 2.8285
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 4
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 2.8283,
+                      "y": 2.8283
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": -77.2,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 31.799999999999997,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": 3,
+      "label": "Building #3",
+      "segments": [
+        {
+          "id": -303558454674,
+          "label": {
+            "text": "[1] Small Canopies",
+            "values": [
+              {
+                "text": "Small Canopies",
+                "lookupCode": "AC",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 11,
+              "y": 41
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[1] Small Canopies",
+                "values": [
+                  {
+                    "text": "Small Canopies",
+                    "lookupCode": "AC",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 11,
+                  "y": 41
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "placeholder",
+              "area": {
+                "value": 300,
+                "type": "overridden"
+              },
+              "perimeter": {
+                "value": 0,
+                "type": "overridden"
+              },
+              "ring": {
+                "origin": {
+                  "x": 11,
+                  "y": 41
+                },
+                "commands": [
+                  {
+                    "ellipse": {
+                      "rx": 2,
+                      "ry": 2
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 12.57,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 0,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -303558454673,
+          "label": {
+            "text": "[2] BOAT HOUSE",
+            "values": [
+              {
+                "text": "BOAT HOUSE",
+                "lookupCode": "BH",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 13,
+              "y": 22
+            }
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[2] BOAT HOUSE",
+                "values": [
+                  {
+                    "text": "BOAT HOUSE",
+                    "lookupCode": "BH",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 13,
+                  "y": 22
+                }
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 1120,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 152,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 6,
+                  "y": 6
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 20
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 56,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -20
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -56,
+                      "y": 0
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 1120,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 152,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "unitOfMeasure": "feet",
+  "lookupCollection": {
+    "standard": {
+      "unspecified": {
+        "AC": {
+          "name": "CANOPY ALUM.",
+          "description": "CANOPY ALUM.",
+          "ordinal": 2,
+          "styles": {
+            "vector": {
+              "color": "#F52817",
+              "fill": "#D6FCAB",
+              "stroke": "#1B0C9C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "BD": {
+          "name": "DAIRY BARN",
+          "description": "DAIRY BARN",
+          "ordinal": 8,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "BH": {
+          "name": "BOAT HOUSE",
+          "description": "BOAT HOUSE",
+          "ordinal": 10,
+          "styles": {
+            "vector": {
+              "color": "#4F0D52",
+              "fill": "#DAE54D",
+              "stroke": "#C43507"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "CB": {
+          "name": "CABANA",
+          "description": "CABANA",
+          "ordinal": 18,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "DK": {
+          "name": "DOCK",
+          "description": "DOCK",
+          "ordinal": 33,
+          "styles": {
+            "vector": {
+              "color": "#336600",
+              "fill": "#4dffff",
+              "stroke": "#004d4d"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "RC": {
+          "name": "RC",
+          "description": "RC",
+          "ordinal": 81,
+          "styles": {
+            "vector": {
+              "color": "#336600",
+              "fill": "#6666ff",
+              "stroke": "#b30000"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "RC1": {
+          "name": "RC1",
+          "description": "RC1",
+          "ordinal": 82,
+          "styles": {
+            "vector": {
+              "color": "#808000",
+              "fill": "#d9ff66",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "ROFFICEA": {
+          "name": "RESIDENTIAL OFFICE",
+          "description": "RESIDENTIAL OFFICE",
+          "ordinal": 84,
+          "styles": {
+            "vector": {
+              "color": "#E91316",
+              "fill": "#B2BCF5",
+              "stroke": "#663804"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "SI": {
+          "name": "SITE IMP",
+          "description": "SITE IMP",
+          "ordinal": 88,
+          "styles": {
+            "vector": {
+              "color": "#ff6600",
+              "fill": "#ffff66",
+              "stroke": "#003311"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "STG": {
+          "name": "STORAGE",
+          "description": "STORAGE",
+          "ordinal": 96,
+          "styles": {
+            "vector": {
+              "color": "#151560",
+              "fill": "#F19FC4",
+              "stroke": "#27561C"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "WDA": {
+          "name": "WOOD DECK",
+          "description": "WOOD DECK",
+          "ordinal": 100,
+          "styles": {
+            "vector": {
+              "color": "#995c00",
+              "fill": "#4dff4d",
+              "stroke": "#900C3F"
+            }
+          },
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        }
+      }
+    }
+  }
+}

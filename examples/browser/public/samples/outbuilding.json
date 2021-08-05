@@ -1,0 +1,742 @@
+{
+  "$schema": "https://schemas.opencamadata.org/0.9/data.schema.json",
+  "sketches": [
+    {
+      "id": 1,
+      "label": "Building #1",
+      "segments": [
+        {
+          "id": -312602253533,
+          "label": {
+            "text": "[1] PA-ALUMINUM COVERED SLAB",
+            "values": [
+              {
+                "text": "ALUMINUM COVERED SLAB",
+                "lookupCode": "PA",
+                "lookupName": "outbuilding"
+              }
+            ],
+            "position": {
+              "x": 14,
+              "y": 25
+            },
+            "placement": "overridden",
+            "rotation": 0
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[1] PA-ALUMINUM COVERED SLAB",
+                "values": [
+                  {
+                    "text": "ALUMINUM COVERED SLAB",
+                    "lookupCode": "PA",
+                    "lookupName": "outbuilding"
+                  }
+                ],
+                "position": {
+                  "x": 14,
+                  "y": 25
+                },
+                "placement": "overridden",
+                "rotation": 0
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 976,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 146,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 2,
+                  "y": 6
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 54
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 19,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -42
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -3,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -5
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -2,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -7
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -14,
+                      "y": 0
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 976,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 146,
+            "type": "computed"
+          },
+          "domain": "outbuilding"
+        },
+        {
+          "id": -312602253534,
+          "label": {
+            "text": "[2] FREE STANDING",
+            "values": [
+              {
+                "text": "FREE STANDING",
+                "lookupCode": "FC",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 26,
+              "y": 15
+            },
+            "placement": "overridden",
+            "rotation": 0
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[2] FREE STANDING",
+                "values": [
+                  {
+                    "text": "FREE STANDING",
+                    "lookupCode": "FC",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 26,
+                  "y": 15
+                },
+                "placement": "overridden",
+                "rotation": 0
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 95,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 48,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 18,
+                  "y": 18
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 19,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -5
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -19,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 5
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 95,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 48,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -312602253535,
+          "label": {
+            "text": "[3] MAIN AREA - 3RD LEVEL",
+            "values": [
+              {
+                "text": "MAIN AREA - 3RD LEVEL",
+                "lookupCode": "MA3",
+                "lookupName": "standard"
+              }
+            ],
+            "position": {
+              "x": 41,
+              "y": 42
+            },
+            "placement": "overridden",
+            "rotation": 0
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[3] MAIN AREA - 3RD LEVEL",
+                "values": [
+                  {
+                    "text": "MAIN AREA - 3RD LEVEL",
+                    "lookupCode": "MA3",
+                    "lookupName": "standard"
+                  }
+                ],
+                "position": {
+                  "x": 41,
+                  "y": 42
+                },
+                "placement": "overridden",
+                "rotation": 0
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 1234,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 164,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 21,
+                  "y": 18
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 32
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 14,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 12
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 18,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -12
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 6,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -23
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -22,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -9
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -16,
+                      "y": 0
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 1234,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 164,
+            "type": "computed"
+          },
+          "domain": "unspecified"
+        },
+        {
+          "id": -312602253536,
+          "label": {
+            "text": "[4] PO-OPEN PORCH W/ROOF",
+            "values": [
+              {
+                "text": "OPEN PORCH W/ROOF",
+                "lookupCode": "PO",
+                "lookupName": "outbuilding"
+              }
+            ],
+            "position": {
+              "x": 48,
+              "y": 14
+            },
+            "placement": "overridden",
+            "rotation": 0
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[4] PO-OPEN PORCH W/ROOF",
+                "values": [
+                  {
+                    "text": "OPEN PORCH W/ROOF",
+                    "lookupCode": "PO",
+                    "lookupName": "outbuilding"
+                  }
+                ],
+                "position": {
+                  "x": 48,
+                  "y": 14
+                },
+                "placement": "overridden",
+                "rotation": 0
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 550,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 94,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 37,
+                  "y": 2
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 25
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 22,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -25
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -22,
+                      "y": 0
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 550,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 94,
+            "type": "computed"
+          },
+          "domain": "outbuilding"
+        },
+        {
+          "id": -312602253537,
+          "label": {
+            "text": "[5] MAA-LIVING AREA ANNEX",
+            "values": [
+              {
+                "text": "LIVING AREA ANNEX",
+                "lookupCode": "MAA",
+                "lookupName": "outbuilding"
+              }
+            ],
+            "position": {
+              "x": 25,
+              "y": 66
+            },
+            "placement": "overridden",
+            "rotation": 0
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[5] MAA-LIVING AREA ANNEX",
+                "values": [
+                  {
+                    "text": "LIVING AREA ANNEX",
+                    "lookupCode": "MAA",
+                    "lookupName": "outbuilding"
+                  }
+                ],
+                "position": {
+                  "x": 25,
+                  "y": 66
+                },
+                "placement": "overridden",
+                "rotation": 0
+              },
+              "areaType": "positive",
+              "drawingType": "sketched",
+              "area": {
+                "value": 466,
+                "type": "computed"
+              },
+              "perimeter": {
+                "value": 90,
+                "type": "computed"
+              },
+              "ring": {
+                "origin": {
+                  "x": 21,
+                  "y": 50
+                },
+                "commands": [
+                  {
+                    "line": {
+                      "x": 14,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": 24
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -4,
+                      "y": 4
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -11,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": -4,
+                      "y": -4
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -14
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 5,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "line": {
+                      "x": 0,
+                      "y": -10
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 466,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 90,
+            "type": "computed"
+          },
+          "domain": "outbuilding"
+        },
+        {
+          "id": -312602253538,
+          "label": {
+            "text": "[6] MA4-MAIN AREA 4TH",
+            "values": [
+              {
+                "text": "MAIN AREA 4TH",
+                "lookupCode": "MA4",
+                "lookupName": "outbuilding"
+              }
+            ],
+            "position": {
+              "x": 62,
+              "y": 69
+            },
+            "placement": "overridden",
+            "rotation": 0
+          },
+          "vectors": [
+            {
+              "label": {
+                "text": "[6] MA4-MAIN AREA 4TH",
+                "values": [
+                  {
+                    "text": "MAIN AREA 4TH",
+                    "lookupCode": "MA4",
+                    "lookupName": "outbuilding"
+                  }
+                ],
+                "position": {
+                  "x": 62,
+                  "y": 69
+                },
+                "placement": "overridden",
+                "rotation": 0
+              },
+              "areaType": "positive",
+              "drawingType": "placeholder",
+              "area": {
+                "value": 55,
+                "type": "overridden"
+              },
+              "perimeter": {
+                "value": 15,
+                "type": "overridden"
+              },
+              "ring": {
+                "origin": {
+                  "x": 62,
+                  "y": 69
+                },
+                "commands": [
+                  {
+                    "ellipse": {
+                      "rx": 2,
+                      "ry": 2
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "boundarySize": 100,
+          "page": 1,
+          "area": {
+            "value": 55,
+            "type": "computed"
+          },
+          "perimeter": {
+            "value": 15,
+            "type": "computed"
+          },
+          "domain": "outbuilding"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": 2,
+      "label": "Building #2",
+      "segments": [],
+      "notes": []
+    },
+    {
+      "id": 3,
+      "label": "Building #3",
+      "segments": [],
+      "notes": []
+    }
+  ],
+  "lookupCollection": {
+    "standard": {
+      "unspecified": {
+        "FC": {
+          "name": "FREE STANDING",
+          "description": "FREE STANDING",
+          "ordinal": 35,
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MA3": {
+          "name": "MAIN AREA - 3RD LEVEL",
+          "description": "MAIN AREA - 3RD LEVEL",
+          "ordinal": 50,
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        }
+      }
+    },
+    "outbuilding": {
+      "outbuilding": {
+        "MA4": {
+          "name": "MAIN AREA 4TH",
+          "description": "MAIN AREA 4TH",
+          "ordinal": 1,
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "MAA": {
+          "name": "LIVING AREA ANNEX",
+          "description": "LIVING AREA ANNEX",
+          "ordinal": 6,
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PA": {
+          "name": "ALUMINUM COVERED SLAB",
+          "description": "ALUMINUM COVERED SLAB",
+          "ordinal": 11,
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        },
+        "PO": {
+          "name": "OPEN PORCH W/ROOF",
+          "description": "OPEN PORCH W/ROOF",
+          "ordinal": 26,
+          "attributes": [
+            {
+              "key": "AdditionalValue1",
+              "value": ""
+            },
+            {
+              "key": "AdditionalValue2",
+              "value": ""
+            }
+          ]
+        }
+      }
+    }
+  }
+}

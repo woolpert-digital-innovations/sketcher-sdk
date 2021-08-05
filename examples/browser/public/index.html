@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sketcher Demo</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:300,400,400i,700%7CFira+Mono&display=fallback"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Polyfill to add Promise, fetch -->
+  <script src="https://unpkg.com/core-js-bundle@3.15.2/minified.js"></script>
+  <script src="https://unpkg.com/whatwg-fetch@3.6.2/dist/fetch.umd.js"></script>
+  <script src="https://app.sketcher.camacloud.com/assets/ccsketcher.js"></script>
+  <script>
+    const sketcher = new CAMACloud.Sketcher({ url: 'https://app.sketcher.camacloud.com' });
+
+    /** @type {{data: object, config: object}} */
+    let pristineSample = null;
+
+    function load() {
+      getSample(getParamValue('sample') || 'styles')
+        .then(function (value) {
+          pristineSample = value;
+          document.getElementById('reset').removeAttribute('disabled');
+          document.getElementById('open').removeAttribute('disabled');
+          resetSketch();
+        })
+        .catch(function (reason) {
+          console.error(reason);
+        });
+    }
+
+    function getParamValue(param) {
+      const params = window.location.search.substr(1).split('&');
+      for (let i = 0; i < params.length; ++i) {
+        if (!params[i].startsWith(param + '=')) {
+          continue;
+        }
+        return params[i].split('=')[1];
+      }
+    }
+
+    function getSample(name) {
+      const requests = [
+        'samples/' + name + '.json',
+        'samples/' + name + '.config.json',
+      ].map(function (path) {
+        return fetch(path).then(function (response) { return response.json(); });
+      });
+      return Promise.all(requests)
+        .then(function (contents) {
+          return {
+            data: contents[0],
+            config: contents[1],
+          };
+        });
+    }
+
+    function resetSketch() {
+      document.getElementById('data').value = JSON.stringify(pristineSample.data, null, 2);
+    }
+
+    function openSketcher() {
+      const dataEl = document.getElementById('data');
+      const sample = { data: null, config: pristineSample.config };
+      try {
+        sample.data = JSON.parse(dataEl.value);
+      } catch (error) {
+        console.error('Sketch contains invalid JSON.', error.message);
+      }
+      sketcher.open({
+        data: sample.data,
+        config: sample.config,
+        onLog,
+        onSave,
+      });
+    }
+
+    function onLog(message) {
+      console.info(message.code, message.description);
+    }
+
+    function onSave(saveData, onSuccess, onError) {
+      try {
+        const dataEl = document.getElementById('data');
+        dataEl.value = JSON.stringify(saveData, null, 2);
+        onSuccess();
+      } catch (error) {
+        onError(error);
+      }
+    }
+
+    function closeSketcher() {
+      sketcher.close();
+    }
+  </script>
+</head>
+
+<body onload="load()" onunload="closeSketcher()">
+  <div class="demo__sketch">
+    <div class="flex justify-between align-center">
+      <h3 class="demo__sketch-title">Sketch Data</h3>
+      <div class="flex">
+        <button id="reset" type="button" class="demo__action-link" onclick="resetSketch()" disabled>
+          Reset Data
+        </button>
+        <button id="open" type="button" class="demo__action-link demo__action-link--primary" onclick="openSketcher()"
+          disabled>
+          Open Sketcher
+        </button>
+      </div>
+    </div>
+    <textarea id="data" class="demo__sketch-data" autocomplete="off" spellcheck="false"></textarea>
+  </div>
+</body>
+
+</html>
