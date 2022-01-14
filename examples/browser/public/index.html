@@ -25,6 +25,8 @@
           document.getElementById('reset').removeAttribute('disabled');
           document.getElementById('open').removeAttribute('disabled');
           resetSketch();
+
+          document.getElementById("defaultOpen").click();
         })
         .catch(function (reason) {
           console.error(reason);
@@ -59,16 +61,27 @@
 
     function resetSketch() {
       document.getElementById('data').value = JSON.stringify(pristineSample.data, null, 2);
+      document.getElementById('config').value = JSON.stringify(pristineSample.config, null, 2);
     }
 
     function openSketcher() {
       const dataEl = document.getElementById('data');
-      const sample = { data: null, config: pristineSample.config };
+      const sample = { data: null, config: null };
+      
       try {
         sample.data = JSON.parse(dataEl.value);
       } catch (error) {
         console.error('Sketch contains invalid JSON.', error.message);
       }
+
+      const configEl = document.getElementById('config');
+
+      try {
+        sample.config = JSON.parse(configEl.value);
+      } catch (error) {
+        console.error('Config contains invalid JSON.', error.message);
+      }
+
       sketcher.open({
         data: sample.data,
         config: sample.config,
@@ -94,13 +107,39 @@
     function closeSketcher() {
       sketcher.close();
     }
+
+    function openTab(evt, tabName) {
+
+      const tabContent = document.getElementsByClassName("demo__sketch-data");
+      for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      const tabLinks = document.getElementsByClassName("tabLinks");
+      for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
   </script>
+  
 </head>
 
 <body onload="load()" onunload="closeSketcher()">
   <div class="demo__sketch">
     <div class="flex justify-between align-center">
-      <h3 class="demo__sketch-title">Sketch Data</h3>
+
+      <div class="tab">
+        <button class="tabLinks" onclick="openTab(event, 'data')" id="defaultOpen">Sketch Data</button>
+        <button class="tabLinks" onclick="openTab(event, 'config')">Config</button>
+      </div>
+
+      <h3 class="demo__sketch-title">Sketch Launcher</h3>
+
       <div class="flex">
         <button id="reset" type="button" class="demo__action-link" onclick="resetSketch()" disabled>
           Reset Data
@@ -111,7 +150,10 @@
         </button>
       </div>
     </div>
+
     <textarea id="data" class="demo__sketch-data" autocomplete="off" spellcheck="false"></textarea>
+    <textarea id="config" class="demo__sketch-data" autocomplete="off" spellcheck="false"></textarea>
+
   </div>
 </body>
 
