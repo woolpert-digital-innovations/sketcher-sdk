@@ -1,12 +1,12 @@
 {
-  "$schema": "https://schemas.opencamadata.org/0.9/data.schema.json",
+  "$schema": "https://schemas.opencamadata.org/0.10/data.schema.json",
   "sketches": [
     {
       "id": 1,
       "label": "Building #1",
       "segments": [
         {
-          "id": -312602253533,
+          "id": 1,
           "label": {
             "text": "[1] SITE IMP",
             "values": [
@@ -78,7 +78,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 1
             }
           ],
           "boundarySize": 100,
@@ -94,7 +95,7 @@
           "domain": "unspecified"
         },
         {
-          "id": -312602253534,
+          "id": 2,
           "label": {
             "text": "[2] RESIDENTIAL OFFICE",
             "values": [
@@ -313,7 +314,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 2
             }
           ],
           "boundarySize": 100,
@@ -329,7 +331,7 @@
           "domain": "unspecified"
         },
         {
-          "id": -312602253535,
+          "id": 3,
           "label": {
             "text": "[3] DOCK",
             "values": [
@@ -401,7 +403,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 3
             }
           ],
           "boundarySize": 100,
@@ -417,7 +420,7 @@
           "domain": "unspecified"
         },
         {
-          "id": -312602253536,
+          "id": 4,
           "label": {
             "text": "[4] STORAGE",
             "values": [
@@ -497,7 +500,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 4
             }
           ],
           "boundarySize": 100,
@@ -513,7 +517,7 @@
           "domain": "unspecified"
         },
         {
-          "id": -312602253537,
+          "id": 5,
           "label": {
             "text": "[5] RC1",
             "values": [
@@ -622,7 +626,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 5
             }
           ],
           "boundarySize": 100,
@@ -638,7 +643,7 @@
           "domain": "unspecified"
         },
         {
-          "id": -312602253538,
+          "id": 6,
           "label": {
             "text": "[6] WOOD DECK",
             "values": [
@@ -734,7 +739,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 6
             }
           ],
           "boundarySize": 100,
@@ -750,7 +756,7 @@
           "domain": "unspecified"
         },
         {
-          "id": -312602253539,
+          "id": 7,
           "label": {
             "text": "[7] RC",
             "values": [
@@ -823,7 +829,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 7
             }
           ],
           "boundarySize": 100,
@@ -839,7 +846,7 @@
           "domain": "unspecified"
         },
         {
-          "id": -303558454674,
+          "id": 8,
           "label": {
             "text": "[8] R.E. CABANA ++",
             "values": [
@@ -929,7 +936,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 8
             }
           ],
           "boundarySize": 100,
@@ -962,7 +970,7 @@
       "label": "Building #2",
       "segments": [
         {
-          "id": -303558454674,
+          "id": 9,
           "label": {
             "text": "[1] BANK BARN",
             "values": [
@@ -1099,7 +1107,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 9
             }
           ],
           "boundarySize": 100,
@@ -1115,7 +1124,7 @@
           "domain": "unspecified"
         },
         {
-          "id": -303558454674,
+          "id": 10,
           "label": {
             "text": "[2] Open",
             "values": [
@@ -1211,7 +1220,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 10
             }
           ],
           "boundarySize": 100,
@@ -1234,7 +1244,7 @@
       "label": "Building #3",
       "segments": [
         {
-          "id": -303558454674,
+          "id": 11,
           "label": {
             "text": "[1] Small Canopies",
             "values": [
@@ -1288,7 +1298,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 11
             }
           ],
           "boundarySize": 100,
@@ -1304,7 +1315,7 @@
           "domain": "unspecified"
         },
         {
-          "id": -303558454673,
+          "id": 12,
           "label": {
             "text": "[2] BOAT HOUSE",
             "values": [
@@ -1376,7 +1387,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 12
             }
           ],
           "boundarySize": 100,

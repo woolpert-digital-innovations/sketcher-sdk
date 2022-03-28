@@ -1,12 +1,12 @@
 {
-  "$schema": "https://schemas.opencamadata.org/0.9/data.schema.json",
+  "$schema": "https://schemas.opencamadata.org/0.10/data.schema.json",
   "sketches": [
     {
       "id": 1,
       "label": "Building #1",
       "segments": [
         {
-          "id": -312602253533,
+          "id": 1,
           "label": {
             "text": "[1] PA-ALUMINUM COVERED SLAB",
             "values": [
@@ -106,7 +106,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 1
             }
           ],
           "boundarySize": 100,
@@ -122,7 +123,7 @@
           "domain": "outbuilding"
         },
         {
-          "id": -312602253534,
+          "id": 2,
           "label": {
             "text": "[2] FREE STANDING",
             "values": [
@@ -198,7 +199,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 2
             }
           ],
           "boundarySize": 100,
@@ -214,7 +216,7 @@
           "domain": "unspecified"
         },
         {
-          "id": -312602253535,
+          "id": 3,
           "label": {
             "text": "[3] MAIN AREA - 3RD LEVEL",
             "values": [
@@ -326,7 +328,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 3
             }
           ],
           "boundarySize": 100,
@@ -342,7 +345,7 @@
           "domain": "unspecified"
         },
         {
-          "id": -312602253536,
+          "id": 4,
           "label": {
             "text": "[4] PO-OPEN PORCH W/ROOF",
             "values": [
@@ -418,7 +421,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 4
             }
           ],
           "boundarySize": 100,
@@ -434,7 +438,7 @@
           "domain": "outbuilding"
         },
         {
-          "id": -312602253537,
+          "id": 5,
           "label": {
             "text": "[5] MAA-LIVING AREA ANNEX",
             "values": [
@@ -534,7 +538,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 5
             }
           ],
           "boundarySize": 100,
@@ -550,7 +555,7 @@
           "domain": "outbuilding"
         },
         {
-          "id": -312602253538,
+          "id": 6,
           "label": {
             "text": "[6] MA4-MAIN AREA 4TH",
             "values": [
@@ -608,7 +613,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 6
             }
           ],
           "boundarySize": 100,

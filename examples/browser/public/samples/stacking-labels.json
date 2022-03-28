@@ -1,12 +1,12 @@
 {
-  "$schema": "https://schemas.opencamadata.org/0.9/data.schema.json",
+  "$schema": "https://schemas.opencamadata.org/0.10/data.schema.json",
   "sketches": [
     {
       "id": 1,
       "label": "Building #1",
       "segments": [
         {
-          "id": -312602253533,
+          "id": 1,
           "label": {
             "text": "[1] BW/BAS/SDK",
             "values": [
@@ -134,7 +134,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 1
             }
           ],
           "boundarySize": 100,
@@ -150,7 +151,7 @@
           "domain": "unspecified"
         },
         {
-          "id": -312602253534,
+          "id": 2,
           "label": {
             "text": "[2] GE",
             "values": [
@@ -222,7 +223,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 2
             }
           ],
           "boundarySize": 100,
@@ -238,7 +240,7 @@
           "domain": "unspecified"
         },
         {
-          "id": -312602253535,
+          "id": 3,
           "label": {
             "text": "[3] CP",
             "values": [
@@ -310,7 +312,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 3
             }
           ],
           "boundarySize": 100,
@@ -326,7 +329,7 @@
           "domain": "unspecified"
         },
         {
-          "id": -312602253537,
+          "id": 4,
           "label": {
             "text": "[4] SS",
             "values": [
@@ -398,7 +401,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 4
             }
           ],
           "boundarySize": 100,
@@ -414,7 +418,7 @@
           "domain": "unspecified"
         },
         {
-          "id": -312195603285,
+          "id": 5,
           "label": {
             "text": "[5] AE/BD",
             "values": [
@@ -496,7 +500,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 5
             }
           ],
           "boundarySize": 100,
@@ -512,7 +517,7 @@
           "domain": "unspecified"
         },
         {
-          "id": -312195603285,
+          "id": 6,
           "label": {
             "text": "[6] BM",
             "values": [
@@ -584,7 +589,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "id": 6
             }
           ],
           "boundarySize": 100,

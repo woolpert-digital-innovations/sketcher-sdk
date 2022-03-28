@@ -187,7 +187,7 @@ Sketcher requires an (SDS)[https://opencamadata.org] document object to open. A 
 
 ```javascript
 {
-  $schema: "https://schemas.opencamadata.org/0.9/data.schema.json",
+  $schema: "https://schemas.opencamadata.org/0.10/data.schema.json",
   sketches: [
     {
       label: "Building #1"

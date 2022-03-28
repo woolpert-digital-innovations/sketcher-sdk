@@ -9,13 +9,13 @@ Integrating the Sketcher with your application is easy.
 1. Add the client script to your application:
 
    ```html
-   <script src="https://app.sketcher.camacloud.com/0.9/assets/ccsketcher.js"></script>
+   <script src="https://app.sketcher.camacloud.com/0.10/assets/ccsketcher.js"></script>
    ```
 
 1. From your application, create the Sketcher client:
 
    ```javascript
-   const sketcher = new CAMACloud.Sketcher({ url: 'https://app.sketcher.camacloud.com/0.9' });
+   const sketcher = new CAMACloud.Sketcher({ url: 'https://app.sketcher.camacloud.com/0.10' });
    ```
 
 1. Open a sketch:
@@ -42,7 +42,7 @@ To open a new document, a new [SDS document][sds-document] object must be create
 
 ```javascript
 const data = {
-  $schema: "https://schemas.opencamadata.org/0.9/data.schema.json",
+  $schema: "https://schemas.opencamadata.org/0.10/data.schema.json",
   sketches: [
     {
       label: "Building #1"
@@ -73,7 +73,7 @@ const config = {
 Create the Sketcher client interface:
 
 ```javascript
-const sketcher = new CAMACloud.Sketcher({ url: 'https://app.sketcher.camacloud.com/0.9' });
+const sketcher = new CAMACloud.Sketcher({ url: 'https://app.sketcher.camacloud.com/0.10' });
 ```
 
 Parameters:

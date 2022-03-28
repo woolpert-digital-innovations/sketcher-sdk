@@ -88,7 +88,7 @@ namespace WebView2Demo.ViewModels
             {
                 Input = Input,
                 Config = Config,
-                Url = @"https://app.sketcher.camacloud.com/0.9/?channel=webview2"
+                Url = @"https://app.sketcher.camacloud.com/0.10/?channel=webview2"
             };
 
             SketchWindow.PropertyChanged -= SketchWindow_PropertyChanged;
