@@ -45,7 +45,9 @@ const data = {
   $schema: "https://schemas.opencamadata.org/0.10/data.schema.json",
   sketches: [
     {
-      label: "Building #1"
+      id: 1,
+      label: "Building #1",
+      segments: []
     }
   ]
 };
