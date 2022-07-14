@@ -31,11 +31,16 @@ sequenceDiagram
     ya->>sk: open
     sk->>ya: ready message
     ya->>sk: load
-    loop Editing
-        sk->>sk: Editing
-        sk->>ya: save messages (multiple)
+    par Editing
+        sk->>sk: edit
+        sk->>+ya: save message (multiple)
+        ya->>-sk: save message
+    and Exporting
+        ya->>+sk: get-image-svg message (multiple)
+        sk->>-ya: get-image-svg message
+    and Logging
+        sk ->> ya: log message (multiple)
     end
-    sk ->> ya: log messages (multiple)
     ya ->> sk: close (optional)
     sk ->> ya: closed message
 ```
@@ -131,6 +136,55 @@ graph RL;
 {
   type: "save",
   data: <string>
+}
+```
+
+## Export
+
+Your app can request an SVG export with a "get-image-svg" message. The Sketcher will send back a "get-image-svg" message. Multiple exports can occur while the Sketcher is open and ready.
+
+```mermaid
+graph LR;
+    app[Your App]-- postMessage: get-image-svg -->sa;
+    sa[Sketcher]-- message event: get-image-svg -->app;
+```
+
+### Export Payload:
+
+```javascript
+{
+  type: "get-image-svg",
+  data: {
+    data: <sketch data>,
+    config: <config data>
+  }
+}
+```
+
+### Export Success Payload:
+
+```ts
+{
+  type: "get-image-svg",
+  data: {
+    sketches: {
+      id: number,
+      page: number,
+      name: string,
+      data: string // base64 encoded SVG
+    }[]
+  }
+}
+```
+
+### Export Failure Payload:
+
+```ts
+{
+  type: "get-image-svg",
+  data: {
+    error: string
+  }
 }
 ```
 

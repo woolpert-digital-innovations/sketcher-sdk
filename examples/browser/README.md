@@ -114,12 +114,15 @@ Parameters:
 
 Options:
 
-| Name     | Description                                               |
-| -------- | --------------------------------------------------------- |
-| `data`   | An [SDS document][sds-document] object                    |
-| `config` | A [Sketcher configuration][sketcher-configuration] object |
-| `onLog`  | A log callback to handle messages from the Sketcher       |
-| `onSave` | A save callback to handle save requests from the Sketcher |
+| Name        | Description                                                     |
+| ----------- | --------------------------------------------------------------- |
+| `data`      | An [SDS document][sds-document] object                          |
+| `config`    | A [Sketcher configuration][sketcher-configuration] object       |
+| `onReady`   | A ready callback to handle when the Sketcher is open and loaded |
+| `onClosed`  | A closed callback to handle when the Sketcher is closed         |
+| `onLog`     | A log callback to handle messages from the Sketcher             |
+| `onSave`    | A save callback to handle save requests from the Sketcher       |
+| `svgExport` | Options specific to SVG export                                  |
 
 The `onLog` callback allows the client application to handle log information emitted by the Sketcher. The log message severity can be one of "info", "warn", "error", or "critical".
 
@@ -168,6 +171,47 @@ Example:
 
 ```javascript
 sketcher.close();
+```
+
+### exportSvg
+
+Requests SVG exports from the Sketcher.
+
+The Sketcher must be open and ready to make this call.  The request's reesponse is received by the callbacks defined on the "svgExport" property of the [open options](#open).
+
+Example:
+
+```javascript
+/**
+ * @param {{ id: number, page: number, name: string, data: string }[]} sketches
+ * @returns {void}
+ */
+function onSvgExportSuccess(sketches) {
+  ...
+}
+
+/**
+ * @param {string} error
+ * @returns {void}
+ */
+function onSvgExportFailure(error) {
+  ...
+}
+
+sketcher.open({
+  data, // SDS document object
+  config, // Sketcher configuration object
+  svgExport: {
+    onSuccess: onSvgExportSuccess,
+    onFailure: onSvgExportFailure,
+  },
+  ...
+});
+
+sketcher.exportSvg({
+  data, // SDS document object
+  config, // Sketcher configuration object
+});
 ```
 
 # Data Extraction
