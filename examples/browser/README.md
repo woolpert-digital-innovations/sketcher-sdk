@@ -122,7 +122,14 @@ Options:
 | `onClosed`  | A closed callback to handle when the Sketcher is closed         |
 | `onLog`     | A log callback to handle messages from the Sketcher             |
 | `onSave`    | A save callback to handle save requests from the Sketcher       |
-| `svgExport` | Options specific to SVG export                                  |
+| `svgExport` | SVG export options                                              |
+
+SVG Export Options:
+
+| Name        | Description                                                       |
+| ----------- | ----------------------------------------------------------------- |
+| `onSuccess` | A callback to handle when export requests to the Sketcher succeed |
+| `onFailure` | A callback to handle when export requests to the Sketcher fail    |
 
 The `onLog` callback allows the client application to handle log information emitted by the Sketcher. The log message severity can be one of "info", "warn", "error", or "critical".
 
