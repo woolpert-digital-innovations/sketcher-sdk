@@ -20,7 +20,7 @@
 
 ## 2023-06-01
 
-- New Feature: When the move sketch function is activated, the arrow keys move the sketch. REF: 2311
+- New Feature: When the move sketch function is activated, the arrow keys move the sketch. REF: 23114
 - New Feature: Polygon Tool now highlights yellow to indicate that it is active. REF: 22661
 - Delete line tool now works for arcs. REF: 23322
 - Anchor/Origin reference no longer moves the Flip-V or Flip-H tool is used. REF: 23321
