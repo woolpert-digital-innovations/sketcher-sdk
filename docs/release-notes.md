@@ -26,9 +26,9 @@
 - Anchor/Origin reference no longer moves when the Flip-V or Flip-H tool is used. REF: 23321
 - Dotted line of previously drawn shape is no longer created when clicking Delete Segment before second segment is ready to be drawn. REF: 23320
 - Duplication of first segment no longer occurs when next segment is ready to be drawn. REF: 23319
-- Single closed nodes can now be deleted. REF: 23318
-- CTRL Z no longer erros when undoing a segment on an ellipse drawn with keys tool. REF: 23317
-- Zoom slider now zooms down to 5%. REF: 23316
+- Can no longer auto-complete a single node or line. REF: 23318
+- CTRL+Z no longer errors when undoing a segment on an ellipse drawn with the keys tool. REF: 23317
+- Zoom slider's zoom out button now zooms down to 5%. REF: 23316
 - First arc is no longer flattened to a line when second arc is drawn with the ARC Polygon Tool. REF: 23315
 - Polygon sides selection list no longer duplicates when sketcher is reloaded. REF: 23004
 - The current padding value and location of the dimension labels now show in the Label Edit Tool. REF: 23003
