@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WebView2Demo.Helpers;
 using WebView2Demo.Models;
 using WebView2Demo.ViewModels;
 
@@ -55,6 +56,23 @@ namespace WebView2Demo.Views
                 }));
             }));
         }
+        private void GetSVG(string data, string config)
+        {
+            _ = Dispatcher.BeginInvoke(new Action(() =>
+            {
+                System.Diagnostics.Trace.WriteLine($"Posting message data: {data}");
+                System.Diagnostics.Trace.WriteLine($"Posting message config: {config}");
+                WebView.CoreWebView2.PostWebMessageAsString(JsonConvert.SerializeObject(new
+                {
+                    type = "get-image-svg",
+                    data = new
+                    {
+                        data = JsonConvert.DeserializeObject(data),
+                        config = JsonConvert.DeserializeObject(config)
+                    }
+                }));
+            }));
+        }
 
         private void ViewModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
@@ -66,7 +84,7 @@ namespace WebView2Demo.Views
             {
                 if (!ViewModel.IsOpen)
                 {
-                    Close();
+                    Close();                  
                 }
             }
         }
@@ -86,6 +104,7 @@ namespace WebView2Demo.Views
         private void CoreWebView2_WindowCloseRequested(object sender, object e)
         {
             ViewModel.IsOpen = false;
+
         }
 
         private void WebView_NavigationCompleted(object sender, CoreWebView2NavigationCompletedEventArgs e)
@@ -111,6 +130,15 @@ namespace WebView2Demo.Views
                 {
                     type = "save"
                 }));
+                GetSVG(ViewModel.Output, ViewModel.Config);
+            }
+            if(message.Type == "ready") 
+            {
+                ViewModel.Status = Enums.Status.Open.ToString();
+            }
+            if (message.Type == "log")
+            {
+                ViewModel.Logs = message.Data.ToString();
             }
         }
     }

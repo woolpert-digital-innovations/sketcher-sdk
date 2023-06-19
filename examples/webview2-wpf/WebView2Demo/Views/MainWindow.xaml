@@ -5,12 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WebView2Demo"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Closing="Window_Closing"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" MaxHeight="450" MaxWidth="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width=".5*" />
@@ -18,11 +20,26 @@
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Row="0" Grid.Column="0">
             <Label Content="Sketch Input:" />
-            <Button Content="Reset Sample" Command="{Binding ResetSampleCommand}" />
-            <Button Content="Launch" Command="{Binding LaunchCommand}" />
+            <TextBox IsReadOnly="false" Text="{Binding Input, Mode=TwoWay}" VerticalScrollBarVisibility="Auto" Height="200" AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Reset Sample" Command="{Binding ResetSampleCommand}" Margin="0 0 5 0" />
+                <Button Content="Launch" Command="{Binding LaunchCommand}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Status:"></Label>
+                <TextBlock Name="lblStatus" Text="{Binding Status, Mode=TwoWay}" VerticalAlignment="Center">Closed</TextBlock>
+            </StackPanel>
         </StackPanel>
-        <Label Content="Editor Output:" Grid.Row="0" Grid.Column="1" />
-        <TextBox IsReadOnly="false" Grid.Row="1" Grid.Column="0" Text="{Binding Input, Mode=TwoWay}" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
-        <TextBox IsReadOnly="true" Grid.Row="1" Grid.Column="1" Text="{Binding Output, Mode=TwoWay}" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <Label Content="Editor Output:" Grid.Row="0" Grid.Column="1"/>
+            <TextBox IsReadOnly="true" Text="{Binding Output, Mode=TwoWay}" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" Height="200" TextWrapping="Wrap" />
+            <StackPanel Orientation="Horizontal" Grid.Row="1">
+                <Button Content="Export To SVG" Command="{Binding ExportToSVGCommand}"  Grid.Row="1" Margin="0 0 5 0"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="2">
+            <Label Grid.Column="0" Grid.Row="2">Logs:</Label>
+            <TextBox Grid.Column="0" Grid.Row="2" Text="{Binding Logs, Mode=TwoWay}" Height="100" BorderBrush="LightGray" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" TextWrapping="Wrap" IsReadOnly="True"></TextBox>
+        </StackPanel>
     </Grid>
 </Window>

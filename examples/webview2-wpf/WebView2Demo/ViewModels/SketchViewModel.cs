@@ -91,6 +91,47 @@ namespace WebView2Demo.ViewModels
             }
         }
 
+        private string _SVGExport = "";
+        public string SVGExport
+        {
+            get { return _SVGExport; }
+            set
+            {
+                if (value != _SVGExport)
+                {
+                    _SVGExport = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+
+        private string _Status;
+        public string Status
+        {
+            get => _Status;
+            set
+            {
+                if (value != _Status)
+                {
+                    _Status = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+
+        private string _Logs;
+        public string Logs
+        {
+            get => _Logs;
+            set
+            {
+                if (value != _Logs)
+                {
+                    _Logs += value + "\n";
+                    NotifyPropertyChanged();
+                }
+            }
+        }
         public ICommand LaunchCommand
         {
             get => new RelayCommand(_ => true, Launch);
@@ -105,6 +146,11 @@ namespace WebView2Demo.ViewModels
             else if (message.Type == "save")
             {
                 Output = message.Data.ToString();
+                SVGExport = message.Data.ToString();
+            }
+            else if(message.Type == "get-image-svg")
+            {
+                SVGExport = message.Data.ToString();
             }
         }
 

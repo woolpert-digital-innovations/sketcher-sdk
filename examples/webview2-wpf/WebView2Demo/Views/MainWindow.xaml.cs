@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WebView2Demo.Helpers;
+using WebView2Demo.ViewModels;
 
 namespace WebView2Demo.Views
 {
@@ -25,21 +27,42 @@ namespace WebView2Demo.Views
             InitializeComponent();
 
             var vm = new ViewModels.MainViewModel();
+            var svm = new ViewModels.SketchViewModel();
             this.DataContext = vm;
 
             vm.PropertyChanged += ViewModel_PropertyChanged;
+
+            lblStatus = (TextBlock)this.FindName("lblStatus");
+            SetStatus(vm.Status);
+
+        }
+
+        private void SetStatus(string status)
+        {
+            if (status == Enums.Status.Open.ToString())
+            {
+                lblStatus.Foreground = Brushes.Green;
+            }
+            else if (status == Enums.Status.Closed.ToString())
+            {
+                lblStatus.Foreground = Brushes.Red;
+            }
         }
 
         private void ViewModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
+            var vm = this.DataContext as ViewModels.MainViewModel;
             if (e.PropertyName == nameof(ViewModels.MainViewModel.SketchWindow))
             {
-                var vm = this.DataContext as ViewModels.MainViewModel;
                 if (vm.SketchWindow != null)
                 {
                     var w = new SketchWindow(vm.SketchWindow);
                     w.Show();
                 }
+            }
+            if(e.PropertyName == nameof(ViewModels.MainViewModel.Status))
+            {
+                SetStatus(vm.Status);
             }
         }
 
