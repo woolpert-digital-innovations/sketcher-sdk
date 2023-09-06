@@ -33,3 +33,17 @@
 - Polygon sides selection list no longer duplicates when sketcher is reloaded. REF: 23004
 - The current padding value and location of the dimension labels now show in the Label Edit Tool. REF: 23003
 - 90 Degree Angle Lock no longer remains active after another tool is selected. REF: 22818
+
+# 1.0.4
+
+## 2023-09-06
+
+- New Feature: Added API to export a base64 encoded PNG of a sketch. REF: 24133 
+- New Feature: Added ability to sketch existing CAMA objects. REF: 23634 
+- Decimal values now work when typing line lengths. REF: 24989 
+- Deleting a line adjacent to the start node no longer causes a line to be missing. REF: 23409 
+- Polygon tool no longer loses a vertex when drawing. REF: 22819 
+- Arcs no longer invert when the Flip-V or Flip-H function is used. REF: 23667 
+- "No Changes Found" message no longer appears after a successful save action. REF: 23800 
+- Error no longer occurs when the sketch is saved when there is an undrawn segment. REF: 23799 
+- Auto close now works with segments with arcs. REF: 23569 
