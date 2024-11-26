@@ -47,3 +47,31 @@
 - "No Changes Found" message no longer appears after a successful save action. REF: 23800 
 - Error no longer occurs when the sketch is saved when there is an undrawn segment. REF: 23799 
 - Auto close now works with segments with arcs. REF: 23569 
+
+# 1.1.1
+
+## 2024-11-15
+
+- New Feature: New Event Driven APIs added. REF: 86a2j66tp
+- New Feature: Floor From and Floor To values for Commercial sketching. REF: 86a1bzpym
+  *Configuration Update
+- New Feature: When selected, an overview of the segment is sent over the broadcast channel. REF: 86a1k3tkc
+- New Feature: A ‘hideCloseButton’ capability has been added to the configuration. REF: 86a1m0p7n
+  *Configuration Update
+- New Feature: Configuration updates to select which sketch labels are available by property type. REF: 86a21wwh1
+  *Configuration Update
+- New Feature: Right click menu has been added to bring selections forward and send back. REF: 86a25amtj
+- New Feature: Ability to select multiple segments or multiple lines using ctrl + left click. REF: 86a2j3870
+- The keypad is disabled when adding a placed outbuilding is selected. REF: 86a1b5m6z
+  *Configuration Update
+- Undo/Redo is available for arcs. REF: 86a1bvc2z
+- Existing outbuilding label’s position to be changed when flipping. REF: 86a1dvqau
+- Prompt added to confirm segment deletion when using the “delete” key. REF: 86a1dw0dc
+- Warning message will appear when no more nodes can be added. REF: 86a1dw16p
+- On a new segment with a line deleted, auto closing the segment will function correctly. REF: 86a1dw37b
+- Buildings with no sketch will save without error. REF: 86a1e14m3
+- Floor numbers accept only whole numbers. REF: 86a2hzbqh
+- Vector sorting updated to improve display. REF: 86a2hzdy9
+- Segment ID added to ‘Add Label’ and ‘Edit Label’ display. REF: 86a2j3bfy
+- Label, dimensions, and area labels of the segment will adjust with zoom. REF: 86a2j643h
+- Linked segments calculate SQFT correctly on area breakdown display. REF: 86a4djjw5
