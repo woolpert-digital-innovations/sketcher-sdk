@@ -88,7 +88,7 @@ Options:
 
 | Name     | Description                                               |
 | -------- | --------------------------------------------------------- |
-| `url`    | Sketcher appliction URL                                   |
+| `url`    | Sketcher application URL                                   |
 
 ## Properties
 
