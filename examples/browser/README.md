@@ -255,7 +255,7 @@ The demo consists of a static web application that opens sample SDS data and con
 
 ### Prerequisites
 
-- Node.js v14+
+- Node.js v22+
 
 ### Configuration
 
