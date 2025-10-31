@@ -10,6 +10,8 @@ Sketcher requires a CAMA Cloud License to access. To request a trial key please 
 
 ## Integration
 
+Learn about the data format, [Sketch Data Schema](./docs/sds/guide.md).
+
 Refer to the [integration guide](./docs/integration-guide.md) for detailed information about how to integrate your application with the Sketcher.
 
 ## Integration Implementations
