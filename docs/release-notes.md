@@ -1,6 +1,9 @@
-# 1.1.1
+# Release Notes
 
-## 2024-11-15
+# 1.1.1
+## 1.1.1
+
+### 2024-11-15
 
 - New Feature: New Event Driven APIs added. REF: 86a2j66tp
 - New Feature: Floor From and Floor To values for Commercial sketching. REF: 86a1bzpym
@@ -26,9 +29,9 @@
 - Label, dimensions, and area labels of the segment will adjust with zoom. REF: 86a2j643h
 - Linked segments calculate SQFT correctly on area breakdown display. REF: 86a4djjw5
 
-# 1.0.4
+## 1.0.4
 
-## 2023-09-06
+### 2023-09-06
 
 - New Feature: Added API to export a base64 encoded PNG of a sketch. REF: 24133 
 - New Feature: Added ability to sketch existing CAMA objects. REF: 23634 
@@ -40,9 +43,9 @@
 - Error no longer occurs when the sketch is saved when there is an undrawn segment. REF: 23799 
 - Auto close now works with segments with arcs. REF: 23569 
 
-# 1.0.3
+## 1.0.3
 
-## 2023-06-01
+### 2023-06-01
 
 - New Feature: When the move sketch function is activated, the arrow keys move the sketch. REF: 23114
 - New Feature: Polygon Tool now highlights yellow to indicate that it is active. REF: 22661
@@ -58,17 +61,17 @@
 - The current padding value and location of the dimension labels now show in the Label Edit Tool. REF: 23003
 - 90 Degree Angle Lock no longer remains active after another tool is selected. REF: 22818
 
-# 0.10
+## 0.10
 
-## 2022-07-14
+### 2022-07-14
 
 - Add export API.
 - Add support for SDS document version 0.10.
 - Drop support for SDS document version 0.9.
 - Validate unique identifiers.
 
-# 0.9
+## 0.9
 
-## 2021-11-30
+### 2021-11-30
 
 - First release.

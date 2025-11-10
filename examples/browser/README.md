@@ -9,13 +9,13 @@ Integrating the Sketcher with your application is easy.
 1. Add the client script to your application:
 
    ```html
-   <script src="https://app.sketcher.camacloud.com/0.10/assets/ccsketcher.js"></script>
+   <script src="https://app.sketcher.camacloud.com/2.0/assets/ccsketcher.js"></script>
    ```
 
 1. From your application, create the Sketcher client:
 
    ```javascript
-   const sketcher = new CAMACloud.Sketcher({ url: 'https://app.sketcher.camacloud.com/0.10' });
+   const sketcher = new CAMACloud.Sketcher({ url: 'https://app.sketcher.camacloud.com/2.0' });
    ```
 
 1. Open a sketch:
@@ -42,7 +42,7 @@ To open a new document, a new [SDS document][sds-document] object must be create
 
 ```javascript
 const data = {
-  $schema: "https://schemas.opencamadata.org/0.10/data.schema.json",
+  $schema: "https://schemas.opencamadata.org/2.0/data.schema.json",
   sketches: [
     {
       id: 1,
@@ -57,7 +57,7 @@ Sketcher requires a configuration object.  A minimal configuration must specify 
 
 ```javascript
 const config = {
-  version: "1.0",
+  version: "2.0",
   lookupCollection: {
     standard: {
       unspecified: {
@@ -70,12 +70,12 @@ const config = {
 };
 ```
 
-# API
+## API
 
 Create the Sketcher client interface:
 
 ```javascript
-const sketcher = new CAMACloud.Sketcher({ url: 'https://app.sketcher.camacloud.com/0.10' });
+const sketcher = new CAMACloud.Sketcher({ url: 'https://app.sketcher.camacloud.com/2.0' });
 ```
 
 Parameters:
@@ -90,19 +90,19 @@ Options:
 | -------- | --------------------------------------------------------- |
 | `url`    | Sketcher application URL                                   |
 
-## Properties
+### Properties
 
-### data
+#### data
 
 Read-only property that returns an `Object` representing the last [SDS document][sds-document] opened or saved by the Sketcher.
 
-### isClosed
+#### isClosed
 
 Read-only property that returns a `boolean` indicating whether the Sketcher is closed.
 
-## Methods
+### Methods
 
-### open
+#### open
 
 Opens the Sketcher.
 
@@ -114,17 +114,26 @@ Parameters:
 
 Options:
 
-| Name        | Description                                                     |
-| ----------- | --------------------------------------------------------------- |
-| `data`      | An [SDS document][sds-document] object                          |
-| `config`    | A [Sketcher configuration][sketcher-configuration] object       |
-| `onReady`   | A ready callback to handle when the Sketcher is open and loaded |
-| `onClosed`  | A closed callback to handle when the Sketcher is closed         |
-| `onLog`     | A log callback to handle messages from the Sketcher             |
-| `onSave`    | A save callback to handle save requests from the Sketcher       |
-| `svgExport` | SVG export options                                              |
+| Name        | Description                                                                  |
+| ----------- | ---------------------------------------------------------------------------  |
+| `elementId` | Optional element Id to open the Sketch in; otherwise, opens in a new window  |
+| `data`      | An [SDS document][sds-document] object                                       |
+| `config`    | A [Sketcher configuration][sketcher-configuration] object                    |
+| `onReady`   | A ready callback to handle when the Sketcher is open and loaded              |
+| `onClosed`  | A closed callback to handle when the Sketcher is closed                      |
+| `onLog`     | A log callback to handle messages from the Sketcher                          |
+| `onSave`    | A save callback to handle save requests from the Sketcher                    |
+| `pngExport` | PNG export callbacks                                                         |
+| `svgExport` | SVG export callbacks                                                         |
 
-SVG Export Options:
+PNG Export Callbacks:
+
+| Name        | Description                                                       |
+| ----------- | ----------------------------------------------------------------- |
+| `onSuccess` | A callback to handle when export requests to the Sketcher succeed |
+| `onFailure` | A callback to handle when export requests to the Sketcher fail    |
+
+SVG Export Callbacks:
 
 | Name        | Description                                                       |
 | ----------- | ----------------------------------------------------------------- |
@@ -170,7 +179,7 @@ function onSave(saveData, onSuccess, onFailure) {
 }
 ```
 
-### close
+#### close
 
 Closes the Sketcher.
 
@@ -180,11 +189,52 @@ Example:
 sketcher.close();
 ```
 
-### exportSvg
+#### exportPng
+
+Requests PNG exports from the Sketcher.
+
+The Sketcher must be open and ready to make this call.  The request's response is received by the callbacks defined on the "pngExport" property of the [open options](#open).
+
+Example:
+
+```javascript
+/**
+ * @param {{ id: number, page: number, name: string, data: string }[]} sketches
+ * @returns {void}
+ */
+function onPngExportSuccess(sketches) {
+  ...
+}
+
+/**
+ * @param {string} error
+ * @returns {void}
+ */
+function onPngExportFailure(error) {
+  ...
+}
+
+sketcher.open({
+  data, // SDS document object
+  config, // Sketcher configuration object
+  pngExport: {
+    onSuccess: onPngExportSuccess,
+    onFailure: onPngExportFailure,
+  },
+  ...
+});
+
+sketcher.exportPng({
+  data, // SDS document object
+  config, // Sketcher configuration object
+});
+```
+
+#### exportSvg
 
 Requests SVG exports from the Sketcher.
 
-The Sketcher must be open and ready to make this call.  The request's reesponse is received by the callbacks defined on the "svgExport" property of the [open options](#open).
+The Sketcher must be open and ready to make this call.  The request's response is received by the callbacks defined on the "svgExport" property of the [open options](#open).
 
 Example:
 
@@ -221,11 +271,11 @@ sketcher.exportSvg({
 });
 ```
 
-# Data Extraction
+## Data Extraction
 
 The Sketcher works with JSON data that conforms to the [SDS][sds]. The following examples show how data can be extracted or aggregated from script.
 
-## Total Area
+### Total Area
 
 ```javascript
 let totalArea = 0;
@@ -236,7 +286,7 @@ for (const sketch of data.sketches) {
 }
 ```
 
-## Total Perimeter
+### Total Perimeter
 
 ```javascript
 let totalPerimeter = 0;
@@ -247,21 +297,21 @@ for (const sketch of data.sketches) {
 }
 ```
 
-# Demo
+## Demo
 
 The demo consists of a static web application that opens sample SDS data and configuration files into the Sketcher as outlined in the [Getting Started](#getting-started) section.
 
-## Setup
+### Setup
 
-### Prerequisites
+#### Prerequisites
 
 - Node.js v22+
 
-### Configuration
+#### Configuration
 
 - PORT=_port to run on_
 
-### Run
+#### Run
 
 ```sh
 npm install
@@ -279,6 +329,6 @@ PORT=<port> npm start
 
 Navigate to `http://localhost:<port>` from a web browser.
 
-[sds]: https://schemas.opencamadata.org
-[sds-document]: https://woolpert.gitlab.io/product-engineering/cama2/sketch/sketch-data-schema/data.html
+[sds]: ../../docs/sds/release-notes.md
+[sds-document]: ../../docs/sds/guide.md
 [sketcher-configuration]: ../../docs/integration-guide.md#configuration

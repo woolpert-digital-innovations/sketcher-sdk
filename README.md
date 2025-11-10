@@ -2,7 +2,7 @@
 
 SketchPro is a hosted web application created specifically for computer assisted mass appraisal (CAMA).
 
-This SDK provides guides and examples for how to integrate the SketchPro with your CAMA software.
+This SDK provides guides and examples for how to integrate SketchPro with your CAMA software.
 
 ## Licensing
 
