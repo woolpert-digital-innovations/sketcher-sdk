@@ -4,6 +4,7 @@ import shutil
 import tempfile
 from json_schema_for_humans.generate import generate_from_file_object
 from json_schema_for_humans.generation_configuration import GenerationConfiguration
+import os
 import re
 import requests
 
@@ -45,7 +46,9 @@ for version, url in schema_url_by_version.items():
         continue
 
     r = requests.get(url)
-    with tempfile.NamedTemporaryFile(mode="w+t", delete=True) as temp_file:
+    with tempfile.NamedTemporaryFile(mode="w+t", delete=False) as temp_file:
         temp_file.write(r.text)
         temp_file.seek(0)
         generate_docs(temp_file, version)
+        temp_file.close()
+        os.unlink(temp_file.name)
