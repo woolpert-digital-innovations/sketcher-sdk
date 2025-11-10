@@ -9,13 +9,10 @@ import re
 import requests
 
 skip_versions: list[str] = ["0.10"]
-
+schemas_outdir = Path("../docs/sds/schemas")
 
 def generate_docs(schema_file, schema_name):
-    outdir = Path("../docs/sds/schemas")
-    shutil.rmtree(outdir, ignore_errors=True)
-    outdir.mkdir(parents=True, exist_ok=True)
-    doc = outdir.joinpath(f"{schema_name}.md")
+    doc = schemas_outdir.joinpath(f"{schema_name}.md")
 
     config = GenerationConfiguration(
         template_name="md",
@@ -40,6 +37,8 @@ def create_schema_url_by_version() -> dict[str, str]:
 
 
 schema_url_by_version = create_schema_url_by_version()
+shutil.rmtree(schemas_outdir, ignore_errors=True)
+schemas_outdir.mkdir(parents=True, exist_ok=True)
 
 for version, url in schema_url_by_version.items():
     if version in skip_versions:
