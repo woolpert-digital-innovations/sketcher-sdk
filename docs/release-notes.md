@@ -1,6 +1,57 @@
 # Release Notes
 
-# 1.1.1
+## 2.0.0
+
+### 2025-12-04
+
+#### ⚠️ BREAKING CHANGES
+
+- #421: Support for SDS version < 2.0 dropped
+  - required `$schema` is `https://schemas.opencamadata.org/2.0/data.schema.json`
+  - refer to [SDS 2.0 release notes](https://github.com/woolpert-digital-innovations/sketcher-sdk/blob/main/docs/sds/release-notes.md#20)
+- #422: Support for config version < 2.0 dropped
+  - required `version` is `2.0`
+- Export SVG API
+  - renamed type `{ type: 'get-image-svg'; data: { data: <sketch data>; config: <config data> } }` -> `{ type: 'getImageSvg'; data: { data: <sketch data>; config: <config data> } }`
+  - renamed type `{ type: 'get-image-svg'; data: { error: string } }` -> `{ type: 'getImageSvg'; data: { error: string } }`
+  - renamed type `{ type: 'get-image-svg'; data: { sketches: { id: number; page: number; name: string; data: string; }[] } }` -> `{ type: 'getImageSvg'; data: { sketches: { id: number; page: number; name: string; data: string; }[] } }`
+- Export PNG API
+  - renamed type `{ type: 'get-image-png'; data: { data: <sketch data>; config: <config data> } }` -> `{ type: 'getImagePng', data: { data: <sketch data>; config: <config data> } }`
+  - renamed type `{ type: 'get-image-png'; data: { error: string } }` -> `{ type: 'getImagePng', data: { error: string } }`
+  - renamed type `{ type: 'get-image-png'; data: { sketches: { id: number; page: number; name: string; data: string; }[] } }` -> `{ type: 'getImagePng'; data: { sketches: { id: number; page: number; name: string; data: string; }[] } }`
+- Sketch Select API
+  - renamed type and changed data `{ type: 'buildingSelect'; data: { buildingID: number; } }` -> `{ type: 'sketchSelect'; data: { sketchId: number; } }`
+- Page Select API
+  - changed data `{ type: 'pageSelect'; data: { sketchID: number; pageID: number; } }` -> `{ type: 'pageSelect'; data: { sketchId: number; pageId: number; } }`
+- Sketch Create API
+  - renamed type and changed data `{ type: 'addSketch'; data: string }` -> `{ type: 'sketchCreate'; data: { sketchId: number; label: string; } }`
+- Sketch Delete API
+  - renamed type and changed data `{ type: 'deleteSketch'; data: string }` -> `{ type: 'sketchDelete'; data: { sketchId: number; } }`
+- Polygon Create API
+  - renamed type and changed data `{ type: 'polycreate'; data: { id: number; segmentID: number; area: number; perimeter: number; labelcode: string; } }` -> `{ type: 'polygonCreate'; data: { sketchId: number; vectorId: number; area: number; perimeter: number; lookupCode: string; } }`
+- Polygon Select API
+  - renamed type and changed data `{ type: 'polyclick'; data: { id: number; polyid: number; area: number; perimeter: number; labelcode: string; } }` -> `{ type: 'polygonSelect'; data: { sketchId: number; vectorId: number; area: number; perimeter: number; lookupCode: string; } }`
+- Select Polygon API
+  - changed data `{ type: 'selectPolygon'; data: { id: number; polyid: number; area: number; perimeter: number; labelcode: string; } }` -> `{ type: 'selectPolygon'; data: { sketchId: number; vectorId: number; area: number; perimeter: number; lookupCode: string; } }`
+  - vectorId is the unique id
+- Select Polygon Failure API
+  - renamed type and changed data `{ type: 'Error'; data: string; }` -> `{ type: 'selectPolygon'; data: { error: string } }`
+
+#### 🐞 Fixes
+
+- 86abxze4r: Starting node does not follow when moving segment line
+- 86abuk324: Unable to use angle tool in key pad
+- 86ac47y95: Linked area calculations not displaying correctly in area breakdown table
+- 86a81y95u: Quick shape sometimes produces inaccurate dimensions
+- 86ac2qwa6: Quick shape total SQFT calculation is off
+- 86abq8qe5: Segment lines/walls lost after pressing the + sign on keyboard
+- 86abx2grn: Ellipse/circles do not close
+
+#### ✨ Features
+
+- #422: Support SDS version 2.0
+- #421: Support config version 2.0
+
 ## 1.1.1
 
 ### 2024-11-15
@@ -61,7 +112,7 @@
 - The current padding value and location of the dimension labels now show in the Label Edit Tool. REF: 23003
 - 90 Degree Angle Lock no longer remains active after another tool is selected. REF: 22818
 
-## 0.10
+## 0.10.0
 
 ### 2022-07-14
 
@@ -70,7 +121,7 @@
 - Drop support for SDS document version 0.9.
 - Validate unique identifiers.
 
-## 0.9
+## 0.9.0
 
 ### 2021-11-30
 
