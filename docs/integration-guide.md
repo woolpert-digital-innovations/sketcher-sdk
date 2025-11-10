@@ -1,33 +1,33 @@
 # Integration Guide
 
-# Introduction
+## Introduction
 
-Sketcher is a hosted web application. Everything is handled for you, all you need to do is:
+SketchPro is a hosted web application. Everything is handled for you, all you need to do is:
 
-1. Launch the Sketcher
+1. Launch SketchPro
 1. Load your data
 1. Listen for updates
 
 ## SDS
 
-Sketcher uses the open [Sketch Data Schema](https://opencamadata.org) (SDS) specification to communicate sketch data.
+SketchPro uses the open [Sketch Data Schema](../docs/sds/guide.md) (SDS) specification to communicate sketch data.
 
 ## Technology
 
-Sketcher uses the web standard Broadcast Channel API to communicate with your application. To learn more about this mechanism please refer to the following resources:
+SketchPro uses the web standard Broadcast Channel API to communicate with your application. To learn more about this mechanism please refer to the following resources:
 
 - [BroacastChannel](https://developer.mozilla.org/en-US/docs/Web/API/BroadcastChannel)
 - [Window.postMessage()](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage)
 - [Window: message event](https://developer.mozilla.org/en-US/docs/Web/API/Window/message_event)
 
-# Application Flow
+## Application Flow
 
 Following is a typical application lifecycle flow. Details of steps are outlined below.
 
 ```mermaid
 sequenceDiagram
     participant ya as Your App
-    participant sk as Sketcher
+    participant sk as SketchPro
     ya->>sk: open
     sk->>ya: ready message
     ya->>sk: load
@@ -36,8 +36,8 @@ sequenceDiagram
         sk->>+ya: save message (multiple)
         ya->>-sk: save message
     and Exporting
-        ya->>+sk: get-image-svg message (multiple)
-        sk->>-ya: get-image-svg message
+        ya->>+sk: getImageSvg message (multiple)
+        sk->>-ya: getImageSvg message
     and Logging
         sk ->> ya: log message (multiple)
     end
@@ -47,20 +47,20 @@ sequenceDiagram
 
 ## Launch
 
-On launch the Sketcher will check for a valid license. If one is not found the user will be redirected to the licensing page, and then redirected back once authentication is completed.
+On launch SketchPro will check for a valid license. If one is not found the user will be redirected to the licensing page, and then redirected back once authentication is completed.
 
 ```mermaid
 graph LR;
     app[Your App]-- launches -->auth{Licensed?};
-    sa[Sketcher]-- message event: ready -->app;
+    sa[SketchPro]-- message event: ready -->app;
     auth-- yes -->sa;
     auth-- no -->lisc[Licensing];
     lisc-->sa;
 ```
 
-### Ready Response Payload:
+### Ready Response Payload
 
-```javascript
+```ts
 {
   type: "ready";
 }
@@ -72,176 +72,387 @@ Once the application is opened a "ready" message will be sent. Once received the
 
 ```mermaid
 graph RL;
-    sa[Sketcher]-- message event: ready -->app;
-    app[Your App]-- postMessage: load -->sa[Sketcher];
+    sa[SketchPro]-- message event: ready -->app;
+    app[Your App]-- postMessage: load -->sa[SketchPro];
 
 ```
 
 When a ready message is received, this is your opportunity to load data.
 
-### Ready Response Payload:
+### Ready Response Payload
 
-```javascript
+```ts
 {
   type: "ready";
 }
 ```
 
-### Load Payload:
+### Load Payload
 
-```javascript
+```ts
 {
-  type: "load",
+  type: "load";
   data: {
-    data: <sketch data>,
-    config: <config data>
-  }
+    data: <sketch data>;
+    config: <config data>;
+  };
 }
 ```
 
 ## Save
 
-When a request to save occurs in the Sketcher a save event will be sent. Your app should respond with a "save" message to confirm completion. Multiple save events can occur as the user is given the choice to close or continue upon save.
+When a request to save occurs in SketchPro a save event will be sent. Your app should respond with a "save" message to confirm completion. Multiple save events can occur as the user is given the choice to close or continue upon save.
 
 ```mermaid
 graph RL;
-    sa[Sketcher]-- message event: save -->app;
-    app[Your App]-- postMessage: save -->sa[Sketcher];
+    sa[SketchPro]-- message event: save -->app;
+    app[Your App]-- postMessage: save -->sa[SketchPro];
 ```
 
-`
+### Save Payload
 
-### Save Payload:
-
-```javascript
+```ts
 {
-  type: "save",
+  type: "save";
   data: {
-    data: <sketch data>
-  }
+    data: <sketch data>;
+  };
 }
 ```
 
-### Save Success Confirmation:
+### Save Success Confirmation Payload
 
-```javascript
+```ts
 {
   type: "save";
 }
 ```
 
-### Save Failure Confirmation:
+### Save Failure Confirmation Payload
 
-```javascript
+```ts
 {
-  type: "save",
-  data: <string>
+  type: "save";
+  data: string;
 }
 ```
 
-## Export
+## Export PNG
 
-Your app can request an SVG export with a "get-image-svg" message. The Sketcher will send back a "get-image-svg" message. Multiple exports can occur while the Sketcher is open and ready.
+Your app can request an SVG export with a "getImagePng" message. SketchPro will send back a "getImagePng" message. Multiple exports can occur while SketchPro is open and ready.
 
 ```mermaid
 graph LR;
-    app[Your App]-- postMessage: get-image-svg -->sa;
-    sa[Sketcher]-- message event: get-image-svg -->app;
+    app[Your App]-- postMessage: getImagePng -->sa;
+    sa[SketchPro]-- message event: getImagePng -->app;
 ```
 
-### Export Payload:
-
-```javascript
-{
-  type: "get-image-svg",
-  data: {
-    data: <sketch data>,
-    config: <config data>
-  }
-}
-```
-
-### Export Success Payload:
+### Export PNG Payload
 
 ```ts
 {
-  type: "get-image-svg",
+  type: "getImagePng";
+  data: {
+    data: <sketch data>;
+    config: <config data>;
+  };
+}
+```
+
+### Export PNG Success Payload
+
+```ts
+{
+  type: "getImagePng";
   data: {
     sketches: {
-      id: number,
-      page: number,
-      name: string,
-      data: string // base64 encoded SVG
-    }[]
-  }
+      id: number;
+      page: number;
+      name: string;
+      data: string; // PNG data URL
+    }[];
+  };
 }
 ```
 
-### Export Failure Payload:
+### Export PNG Failure Payload
 
 ```ts
 {
-  type: "get-image-svg",
+  type: "getImagePng";
   data: {
-    error: string
-  }
+    error: string;
+  };
+}
+```
+
+## Export SVG
+
+Your app can request an SVG export with a "getImageSvg" message. SketchPro will send back a "getImageSvg" message. Multiple exports can occur while SketchPro is open and ready.
+
+```mermaid
+graph LR;
+    app[Your App]-- postMessage: getImageSvg -->sa;
+    sa[SketchPro]-- message event: getImageSvg -->app;
+```
+
+### Export SVG Payload
+
+```ts
+{
+  type: "getImageSvg";
+  data: {
+    data: <sketch data>;
+    config: <config data>;
+  };
+}
+```
+
+### Export SVG Success Payload
+
+```ts
+{
+  type: "getImageSvg";
+  data: {
+    sketches: {
+      id: number;
+      page: number;
+      name: string;
+      data: string; // base64 encoded SVG
+    }[];
+  };
+}
+```
+
+### Export SVG Failure Payload
+
+```ts
+{
+  type: "getImageSvg";
+  data: {
+    error: string;
+  };
+}
+```
+
+## Sketch Select
+
+SketchPro will send a "sketchSelect" message when the selected sketch is changed.
+
+```mermaid
+graph LR;
+    sa[SketchPro]-- message event: sketchSelect -->app[Your App];
+```
+
+### Sketch Select Payload
+
+```ts
+{
+  type: "sketchSelect";
+  data: {
+    sketchId: number;
+  };
+}
+```
+
+## Page Select
+
+SketchPro will send a "pageSelect" message when the selected page is changed.
+
+```mermaid
+graph LR;
+    sa[SketchPro]-- message event: pageSelect -->app[Your App];
+```
+
+### Page Select Payload
+
+```ts
+{
+  type: "pageSelect";
+  data: {
+    sketchId: number;
+    pageId: number;
+  };
+}
+```
+
+## Sketch Create
+
+SketchPro will send a "sketchCreate" message when a sketch is created.
+
+```mermaid
+graph LR;
+    sa[SketchPro]-- message event: sketchCreate -->app[Your App];
+```
+
+### Sketch Create Payload
+
+```ts
+{
+  type: "sketchCreate";
+  data: {
+    sketchId: number;
+    label: string;
+  };
+}
+```
+
+## Sketch Delete
+
+SketchPro will send a "sketchDelete" message when a sketch is deleted.
+
+```mermaid
+graph LR;
+    sa[SketchPro]-- message event: sketchDelete -->app[Your App];
+```
+
+### Sketch Delete Payload
+
+```ts
+{
+  type: "sketchDelete";
+  data: {
+    sketchId: number;
+  };
+}
+```
+
+## Polygon Create
+
+SketchPro will send a "polygonCreate" message when a polygon is created.
+
+```mermaid
+graph LR;
+    sa[SketchPro]-- message event: polygonCreate -->app[Your App];
+```
+
+### Polygon Create Payload
+
+```ts
+{
+  type: "polygonCreate";
+  data: {
+    sketchId: number;
+    vectorId: number;
+    area: number;
+    perimeter: number;
+    lookupCode: string;
+  };
+}
+```
+
+## Polygon Select
+
+SketchPro will send a "polygonSelect" message when the selected polygon is changed.
+
+```mermaid
+graph LR;
+    sa[SketchPro]-- message event: polygonSelect -->app[Your App];
+```
+
+### Polygon Select Payload
+
+```ts
+{
+  type: "polygonSelect";
+  data: {
+    sketchId: number;
+    vectorId: number;
+    area: number;
+    perimeter: number;
+    lookupCode: string;
+  };
+}
+```
+
+## Select Polygon
+
+Your app can request a polygon to be selected with the "selectPolygon" message. SketchPro will send back a "selectPolygon" message to indicate success or failure.
+
+```mermaid
+graph LR;
+    app[Your App]-- postMessage: selectPolygon -->sa;
+    sa[SketchPro]-- message event: selectPolygon -->app;
+```
+
+### Select Polygon Payload
+
+```ts
+{
+  type: "selectPolygon";
+  data: {
+    sketchId: number;
+    pageId?: number;
+    vectorId: number;
+  };
+}
+```
+
+### Select Polygon Failure Payload
+
+```ts
+{
+  type: "selectPolygon";
+  data: {
+    error: string;
+  };
 }
 ```
 
 ## Log
 
-The Sketcher will log messages when appropriate. These messages are all for informational purposes.
+SketchPro will log messages when appropriate. These messages are all for informational purposes.
 
 ```mermaid
 graph RL;
-    sa[Sketcher]-- message event: log -->app[Your App];
+    sa[SketchPro]-- message event: log -->app[Your App];
 ```
 
-### Log Payload:
+### Log Payload
 
 ```ts
 {
-  severity: "info" | "warn" | "error" | "critical",
-  code: string,
-  description: string
+  severity: "info" | "warn" | "error" | "critical";
+  code: string;
+  description: string;
 }
 ```
 
 ## Close
 
-If the Sketcher is closed a closed message will be sent. If your app initiates the close, the Sketcher will send the closed event when it has completed.
+If SketchPro is closed a closed message will be sent. If your app initiates the close, SketchPro will send the closed event when it has completed.
 
 ```mermaid
 graph LR;
-    app[Your App]-- "Window.close()" -->sa[Sketcher];
-    sa[Sketcher]-- message event: closed -->app;
+    app[Your App]-- "Window.close()" -->sa[SketchPro];
+    sa[SketchPro]-- message event: closed -->app;
 ```
 
-### Closed Payload:
+### Closed Payload
 
-```javascript
+```ts
 {
   type: "closed";
 }
 ```
 
-# Example Integrations
+## Example Integrations
 
-## Web Browser
+### Web Browser
 
-Sketcher integrates easily via JavaScript in a browser-based app. Guidance and a working example can be found [here](../examples/browser).
+SketchPro integrates easily via JavaScript in a browser-based app. Guidance and a working example can be found [here](../examples/browser).
 
-## Windows
+### Windows
 
-Sketcher can integrate with your Windows app through a control such as [WebView2](https://docs.microsoft.com/en-us/microsoft-edge/webview2/). Guidance and a working example for a WPF app can be found [here](../examples/dotnet-webview2).
+SketchPro can integrate with your Windows app through a control such as [WebView2](https://docs.microsoft.com/en-us/microsoft-edge/webview2/). Guidance and a working example for a WPF app can be found [here](../examples/dotnet-webview2).
 
-# Sketch
+## Sketch
 
-Sketcher requires an (SDS)[https://opencamadata.org] document object to open. A minimal document includes the schema and sketches. In addition to that, Sketcher requires at least one sketch for a user to get started:
+SketchPro requires an (SDS)[https://opencamadata.org] document object to open. A minimal document includes the schema and sketches. In addition to that, SketchPro requires at least one sketch for a user to get started:
 
 ```javascript
 {
-  $schema: "https://schemas.opencamadata.org/0.10/data.schema.json",
+  $schema: "https://schemas.opencamadata.org/2.0/data.schema.json",
   sketches: [
     {
       label: "Building #1"
@@ -250,9 +461,9 @@ Sketcher requires an (SDS)[https://opencamadata.org] document object to open. A 
 }
 ```
 
-# Configuration
+## Configuration
 
-Sketcher requires a configuration object to open. The configuration object should specify the config version and a non-empty lookup collection that can be used to create segments.  Sketcher and config versions are independent.  A minimal configuration object:
+SketchPro requires a configuration object to open. The configuration object should specify the config version and a non-empty lookup collection that can be used to create segments.  SketchPro and config versions are independent.  A minimal configuration object:
 
 ```javascript
 {
@@ -278,9 +489,9 @@ Sketcher requires a configuration object to open. The configuration object shoul
 }
 ```
 
-## Interface
+### Interface
 
-A variety of options may be specified by a configuration object that you provide when opening the Sketcher.
+A variety of options may be specified by a configuration object that you provide when opening SketchPro.
 
 ```typescript
 interface Configuration {
@@ -466,7 +677,7 @@ interface Pattern {
 }
 ```
 
-## Examples
+### Examples
 
 ```javascript
 {
