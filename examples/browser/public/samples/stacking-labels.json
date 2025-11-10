@@ -1,5 +1,5 @@
 {
-  "$schema": "https://schemas.opencamadata.org/0.10/data.schema.json",
+  "$schema": "https://schemas.opencamadata.org/2.0/data.schema.json",
   "sketches": [
     {
       "id": 1,
