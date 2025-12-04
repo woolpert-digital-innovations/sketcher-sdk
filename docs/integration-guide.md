@@ -10,7 +10,7 @@ SketchPro is a hosted web application. Everything is handled for you, all you ne
 
 ## SDS
 
-SketchPro uses the open [Sketch Data Schema](../docs/sds/guide.md) (SDS) specification to communicate sketch data.
+SketchPro uses the open [Sketch Data Schema](sds/guide.md) (SDS) specification to communicate sketch data.
 
 ## Technology
 
@@ -448,7 +448,7 @@ SketchPro can integrate with your Windows app through a control such as [WebView
 
 ## Sketch
 
-SketchPro requires an (SDS)[https://opencamadata.org] document object to open. A minimal document includes the schema and sketches. In addition to that, SketchPro requires at least one sketch for a user to get started:
+SketchPro requires an [SDS](sds/guide.md) document object to open. A minimal document includes the schema and sketches. In addition to that, SketchPro requires at least one sketch for a user to get started:
 
 ```javascript
 {
@@ -638,7 +638,7 @@ interface Configuration {
 }
 ```
 
-Style is an (SDS)[https://opencamadata.org] _style_.
+Style is an [SDS](sds/guide.md) _style_.
 
 ```typescript
 interface Style {
@@ -659,7 +659,7 @@ interface Style {
 }
 ```
 
-Pattern is an (SDS)[https://opencamadata.org] _pattern_.
+Pattern is an [SDS](sds/guide.md) _pattern_.
 
 ```typescript
 interface Pattern {
