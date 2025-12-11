@@ -32,7 +32,7 @@
 - Polygon Select API
   - renamed type and changed data `{ type: 'polyclick'; data: { id: number; polyid: number; area: number; perimeter: number; labelcode: string; } }` -> `{ type: 'polygonSelect'; data: { sketchId: number; vectorId: number; area: number; perimeter: number; lookupCode: string; } }`
 - Select Polygon API
-  - changed data `{ type: 'selectPolygon'; data: { id: number; polyid: number; area: number; perimeter: number; labelcode: string; } }` -> `{ type: 'selectPolygon'; data: { sketchId: number; vectorId: number; area: number; perimeter: number; lookupCode: string; } }`
+  - changed data `{ type: 'selectPolygon'; data: { data: { sketchID: number; segmentID: number; pageID?: number; } } }` -> `{ type: 'selectPolygon'; data: { sketchId: number; vectorId: number; pageId?: number; } }`
   - vectorId is the unique id
 - Select Polygon Failure API
   - renamed type and changed data `{ type: 'Error'; data: string; }` -> `{ type: 'selectPolygon'; data: { error: string } }`
