@@ -399,6 +399,41 @@ graph LR;
 }
 ```
 
+## Delete Polygon (Introduced v2.1.0)
+
+Your app can request a polygon be deleted with the "deletePolygon" message. SketchPro will send back a "deletePolygon" message in the event of failure.
+
+```mermaid
+graph LR;
+    app[Your App]-- postMessage: deletePolygon -->sa;
+    sa[SketchPro]-- message event: deletePolygon -->app;
+```
+
+
+### Delete Polygon Payload
+
+```ts
+{
+  type: "deletePolygon";
+  data: {
+    sketchId: number;
+    pageId?: number;
+    vectorId: number;
+  };
+}
+```
+
+### Delete Polygon Failure Payload
+
+```ts
+{
+  type: "deletePolygon";
+  data: {
+    error: string;
+  };
+}
+```
+
 ## Log
 
 SketchPro will log messages when appropriate. These messages are all for informational purposes.
