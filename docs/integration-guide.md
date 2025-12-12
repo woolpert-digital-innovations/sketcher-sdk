@@ -385,7 +385,7 @@ graph LR;
 
 ## Select Polygon
 
-Your app can request a polygon to be selected with the "selectPolygon" message. SketchPro will send back a "selectPolygon" message to indicate success or failure.
+Your app can request a polygon be selected with the "selectPolygon" message. SketchPro will send back a "selectPolygon" message in the event of failure.
 
 ```mermaid
 graph LR;
