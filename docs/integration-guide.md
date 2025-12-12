@@ -137,6 +137,26 @@ graph RL;
 }
 ```
 
+## Update Config (Introduced v2.1.0)
+
+Your app can send config updates with an "updateConfig" message and a configuration object.  Multiple updates can occur while SketchPro is open and ready.
+
+```mermaid
+graph LR;
+    app[Your App]-- postMessage: updateConfig -->sa[SketchPro];
+```
+
+### Update Config Payload
+
+```ts
+{
+  type: "updateConfig";
+  data: {
+    config: <config data>;
+  };
+}
+```
+
 ## Export PNG
 
 Your app can request an SVG export with a "getImagePng" message. SketchPro will send back a "getImagePng" message. Multiple exports can occur while SketchPro is open and ready.
