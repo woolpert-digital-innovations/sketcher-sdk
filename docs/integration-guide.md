@@ -68,7 +68,7 @@ graph LR;
 
 ## Load
 
-Once the application is opened a "ready" message will be sent. Once received the app should load the sketch document by sending a load command with a valid SDS document.
+When SketchPro is opened and ready, it will send a "ready" message to your app.  Once the "ready" message is received, your app should send a "load" message with a valid SDS document.
 
 ```mermaid
 graph RL;
@@ -76,8 +76,6 @@ graph RL;
     app[Your App]-- postMessage: load -->sa[SketchPro];
 
 ```
-
-When a ready message is received, this is your opportunity to load data.
 
 ### Ready Response Payload
 
