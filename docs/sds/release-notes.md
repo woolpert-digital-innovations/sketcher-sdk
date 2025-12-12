@@ -2,9 +2,22 @@
 
 ## 2025-11-10
 
-- renamed `labelValue` object property `sectionID` -> `sectionId`
-- changed `section` object to require properties `id` and `name`
-- changed `customFields` object `cField` property type `object` -> `string`
+#### ⚠️ BREAKING CHANGES
+
+- renamed sketch `customfields` -> `customFields`
+- changed sketch `customfields` property type `object` -> `array`
+- renamed `labelValue` property `floorfrom` -> `floorFrom`
+- renamed `labelValue` property `floorto` -> `floorTo`
+- changed `labelValue` property type `number` -> `string`
+- changed `labelValue` property type `number` -> `string`
+
+#### ✨ Features
+
+- added optional `sections` to `sketch`
+- added optional `sectionId` to `labelValue`
+- added optional `propertyType` to `sketch`
+- added optional `propertyTypes` to `lookup`
+- added optional `attributes` to `styledLine` (command for lines)
 
 # [0.10](https://schemas.opencamadata.org/0.10/data.schema.json)
 
