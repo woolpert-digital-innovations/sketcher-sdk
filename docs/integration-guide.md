@@ -68,7 +68,7 @@ graph LR;
 
 ## Load
 
-Once the application is opened a "ready" message will be sent. Once received the app should load the sketch document by sending a load command with a valid SDS document.
+When SketchPro is opened and ready, it will send a "ready" message to your app.  Once the "ready" message is received, your app should send a "load" message with a valid SDS document.
 
 ```mermaid
 graph RL;
@@ -76,8 +76,6 @@ graph RL;
     app[Your App]-- postMessage: load -->sa[SketchPro];
 
 ```
-
-When a ready message is received, this is your opportunity to load data.
 
 ### Ready Response Payload
 
@@ -134,6 +132,26 @@ graph RL;
 {
   type: "save";
   data: string;
+}
+```
+
+## Update Config (Introduced v2.1.0)
+
+Your app can send config updates with an "updateConfig" message and a configuration object.  Multiple updates can occur while SketchPro is open and ready.
+
+```mermaid
+graph LR;
+    app[Your App]-- postMessage: updateConfig -->sa[SketchPro];
+```
+
+### Update Config Payload
+
+```ts
+{
+  type: "updateConfig";
+  data: {
+    config: <config data>;
+  };
 }
 ```
 
@@ -367,7 +385,7 @@ graph LR;
 
 ## Select Polygon
 
-Your app can request a polygon to be selected with the "selectPolygon" message. SketchPro will send back a "selectPolygon" message to indicate success or failure.
+Your app can request a polygon be selected with the "selectPolygon" message. SketchPro will send back a "selectPolygon" message in the event of failure.
 
 ```mermaid
 graph LR;
@@ -393,6 +411,41 @@ graph LR;
 ```ts
 {
   type: "selectPolygon";
+  data: {
+    error: string;
+  };
+}
+```
+
+## Delete Polygon (Introduced v2.1.0)
+
+Your app can request a polygon be deleted with the "deletePolygon" message. SketchPro will send back a "deletePolygon" message in the event of failure.
+
+```mermaid
+graph LR;
+    app[Your App]-- postMessage: deletePolygon -->sa;
+    sa[SketchPro]-- message event: deletePolygon -->app;
+```
+
+
+### Delete Polygon Payload
+
+```ts
+{
+  type: "deletePolygon";
+  data: {
+    sketchId: number;
+    pageId?: number;
+    vectorId: number;
+  };
+}
+```
+
+### Delete Polygon Failure Payload
+
+```ts
+{
+  type: "deletePolygon";
   data: {
     error: string;
   };
