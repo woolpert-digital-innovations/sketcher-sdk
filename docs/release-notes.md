@@ -1,5 +1,21 @@
 # Release Notes
 
+## 2.1.0
+
+### 2025-12-16
+
+### ✨ Features
+
+* **#435:** Add deletePolygon and updateConfig APIs ([66e8aa7](https://github.com/woolpert-cama-cloud/sketch-app/commit/66e8aa71c40e7dc8baf5539e7028eda764fdd955)), closes [#435](https://github.com/woolpert-cama-cloud/sketch-app/issues/435)
+* **#443:** Replace CAMA Cloud ℠ references with SketchPro™ ([50dcc7e](https://github.com/woolpert-cama-cloud/sketch-app/commit/50dcc7ebc414b892d782eb29e679bef7b965170c)), closes [#443](https://github.com/woolpert-cama-cloud/sketch-app/issues/443)
+
+### 🐞 Fixes
+
+* **#435:** Only allow one initialization of a sketch in an application instance ([98f1a4b](https://github.com/woolpert-cama-cloud/sketch-app/commit/98f1a4ba705ceb45b606a416eddb0340beb8878a)), closes [#435](https://github.com/woolpert-cama-cloud/sketch-app/issues/435)
+* **#442:** Update selectPolygon to match its documented implementation ([0fd6f16](https://github.com/woolpert-cama-cloud/sketch-app/commit/0fd6f160fc5dbc83edaced91f602f7a63c137b79)), closes [#442](https://github.com/woolpert-cama-cloud/sketch-app/issues/442)
+* **#447:** Repair selectPolygon API ([5846d77](https://github.com/woolpert-cama-cloud/sketch-app/commit/5846d7745a207928b3c285fd8ab243c1f59b0406)), closes [#447](https://github.com/woolpert-cama-cloud/sketch-app/issues/447)
+* Don't materialize floorFrom/floorTo on load ([c90a52a](https://github.com/woolpert-cama-cloud/sketch-app/commit/c90a52a29731de10c5ffb283e5a13b6c31cd93ca))
+
 ## 2.0.0
 
 ### 2025-12-04
