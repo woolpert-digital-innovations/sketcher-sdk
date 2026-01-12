@@ -1,5 +1,14 @@
 # Release Notes
 
+## 2.2.0
+
+### 2026-01-12
+
+### 🐞 Fixes
+
+* Render dimension labels on load ([aec1254](https://github.com/woolpert-cama-cloud/sketch-app/commit/aec12541ef05bf3401971c58c9ce35a22dfe0700))
+* Use 'centered' default label placement ([2fe83df](https://github.com/woolpert-cama-cloud/sketch-app/commit/2fe83df6a136a9c21907ccfa4ee30e3e37b9b897))
+
 ## 2.1.0
 
 ### 2025-12-16
