@@ -9,13 +9,13 @@ Integrating the Sketcher with your application is easy.
 1. Add the client script to your application:
 
    ```html
-   <script src="https://app.sketcher.camacloud.com/2.1/assets/ccsketcher.js"></script>
+   <script src="https://app.sketcher.camacloud.com/2.2/assets/ccsketcher.js"></script>
    ```
 
 1. From your application, create the Sketcher client:
 
    ```javascript
-   const sketcher = new CAMACloud.Sketcher({ url: 'https://app.sketcher.camacloud.com/2.1' });
+   const sketcher = new CAMACloud.Sketcher({ url: 'https://app.sketcher.camacloud.com/2.2' });
    ```
 
 1. Open a sketch:
