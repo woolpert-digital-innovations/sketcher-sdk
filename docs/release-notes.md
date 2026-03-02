@@ -1,5 +1,19 @@
 # Release Notes
 
+## 2.2.1
+
+### 2026-03-04
+
+### 🐞 Fixes
+
+* **#463:** Calculate area/perimeter with scaled integers ([b6a74d5](https://github.com/woolpert-cama-cloud/sketch-app/commit/b6a74d5d62a126491586b5692d1ae84a085341e2)), closes [#463](https://github.com/woolpert-cama-cloud/sketch-app/issues/463)
+* **#466:** Use reduced tolerance for Vector load ([f3843fe](https://github.com/woolpert-cama-cloud/sketch-app/commit/f3843fe479d888ebb9a6de662999643fe24826b6)), closes [#466](https://github.com/woolpert-cama-cloud/sketch-app/issues/466)
+* **#468:** Replace Math.round w/ sRound for addNode fns ([b154a64](https://github.com/woolpert-cama-cloud/sketch-app/commit/b154a64222b50972ef9ef61a7caf737556782241)), closes [#468](https://github.com/woolpert-cama-cloud/sketch-app/issues/468) [#468](https://github.com/woolpert-cama-cloud/sketch-app/issues/468)
+* Make negative area type vector area unsigned, consistent with SDS spec ([55a8a46](https://github.com/woolpert-cama-cloud/sketch-app/commit/55a8a46deb1574729c8a38f903524a0e69005c3d))
+* Update UI `Vector` references to `Segment` ([9059016](https://github.com/woolpert-cama-cloud/sketch-app/commit/9059016f8983e51b2abd6a1a4c05021bea9ca2de))
+* Update vector reference in the segment dropdown ([619d588](https://github.com/woolpert-cama-cloud/sketch-app/commit/619d588b2de56c74887f04871fdf006b16a3d9f7))
+* Use correct font scale for export SVG API ([b38ab91](https://github.com/woolpert-cama-cloud/sketch-app/commit/b38ab9188565cae31dd101e5b02c67945279eaab))
+
 ## 2.2.0
 
 ### 2026-01-12
