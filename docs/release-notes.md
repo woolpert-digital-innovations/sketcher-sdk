@@ -1,5 +1,13 @@
 # Release Notes
 
+## 2.2.2
+
+### 2026-03-30
+
+### 🐞 Fixes
+
+* **#472:** disable add/delete sketch by default ([0fb7041](https://github.com/woolpert-cama-cloud/sketch-app/commit/0fb7041f41c04f26440cdce10c894d4bb1d1cebb)), closes [#472](https://github.com/woolpert-cama-cloud/sketch-app/issues/472)
+
 ## 2.2.1
 
 ### 2026-03-04
