@@ -58,6 +58,9 @@
   - refer to [SDS 2.0 release notes](https://github.com/woolpert-digital-innovations/sketcher-sdk/blob/main/docs/sds/release-notes.md#20)
 - #422: Support for config version < 2.0 dropped
   - required `version` is `2.0`
+- Config
+  - renamed sketchCustomFields `{ sketchCustomFields: sketchCustomFields: { cField: string; cValue: unknown; cDataType: string; }[] }` -> `{ sketchCustomFields: items: { cField: string; cValue: unknown; cDataType: string; }[] }`
+  - `sketchCustomFields.items` does not accept additional properties
 - Export SVG API
   - renamed type `{ type: 'get-image-svg'; data: { data: <sketch data>; config: <config data> } }` -> `{ type: 'getImageSvg'; data: { data: <sketch data>; config: <config data> } }`
   - renamed type `{ type: 'get-image-svg'; data: { error: string } }` -> `{ type: 'getImageSvg'; data: { error: string } }`
