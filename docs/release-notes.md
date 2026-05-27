@@ -87,33 +87,122 @@
 * #422: Support for config version < 2.0 dropped
   * Required `version` is `2.0`
 * Config
-  * Rename sketchCustomFields `{ sketchCustomFields: { sketchCustomFields: { cField: string; cValue: unknown; cDataType: string; }[] } }` -> `{ sketchCustomFields: { items: { cField: string; cValue: unknown; cDataType: string; }[] } }`
+  * Rename sketchCustomFields 
+
+    ```diff
+    -{ sketchCustomFields: { sketchCustomFields: { cField: string; cValue: unknown; cDataType: string; }[] } }
+    +{ sketchCustomFields: { items: { cField: string; cValue: unknown; cDataType: string; }[] } }
+    ```
+
   * `sketchCustomFields.items` does not accept additional properties
 * Export SVG API
-  * Rename type `{ type: 'get-image-svg'; data: { data: <sketch data>; config: <config data> } }` -> `{ type: 'getImageSvg'; data: { data: <sketch data>; config: <config data> } }`
-  * Rename type `{ type: 'get-image-svg'; data: { error: string } }` -> `{ type: 'getImageSvg'; data: { error: string } }`
-  * Rename type `{ type: 'get-image-svg'; data: { sketches: { id: number; page: number; name: string; data: string; }[] } }` -> `{ type: 'getImageSvg'; data: { sketches: { id: number; page: number; name: string; data: string; }[] } }`
+  * Rename type 
+
+    ```diff
+    -{ type: 'get-image-svg'; data: { data: <sketch data>; config: <config data> } }
+    +{ type: 'getImageSvg'; data: { data: <sketch data>; config: <config data> } }
+    ```
+
+  * Rename type 
+
+    ```diff
+    -{ type: 'get-image-svg'; data: { error: string } }
+    +{ type: 'getImageSvg'; data: { error: string } }
+    ```
+
+  * Rename type 
+
+    ```diff
+    -{ type: 'get-image-svg'; data: { sketches: { id: number; page: number; name: string; data: string; }[] } }
+    +{ type: 'getImageSvg'; data: { sketches: { id: number; page: number; name: string; data: string; }[] } }
+    ```
+
 * Export PNG API
-  * Rename type `{ type: 'get-image-png'; data: { data: <sketch data>; config: <config data> } }` -> `{ type: 'getImagePng', data: { data: <sketch data>; config: <config data> } }`
-  * Rename type `{ type: 'get-image-png'; data: { error: string } }` -> `{ type: 'getImagePng', data: { error: string } }`
-  * Rename type `{ type: 'get-image-png'; data: { sketches: { id: number; page: number; name: string; data: string; }[] } }` -> `{ type: 'getImagePng'; data: { sketches: { id: number; page: number; name: string; data: string; }[] } }`
+  * Rename type 
+
+    ```diff
+    -{ type: 'get-image-png'; data: { data: <sketch data>; config: <config data> } }
+    +{ type: 'getImagePng', data: { data: <sketch data>; config: <config data> } }
+    ```
+
+  * Rename type 
+
+    ```diff
+    -{ type: 'get-image-png'; data: { error: string } }
+    +{ type: 'getImagePng', data: { error: string } }
+    ```
+
+  * Rename type 
+
+    ```diff
+    -{ type: 'get-image-png'; data: { sketches: { id: number; page: number; name: string; data: string; }[] } }
+    +{ type: 'getImagePng'; data: { sketches: { id: number; page: number; name: string; data: string; }[] } }
+    ```
+
 * Sketch Select API
-  * Rename type and change data `{ type: 'buildingSelect'; data: { buildingID: number; } }` -> `{ type: 'sketchSelect'; data: { sketchId: number; } }`
+  * Rename type and change data 
+
+    ```diff
+    -{ type: 'buildingSelect'; data: { buildingID: number; } }
+    +{ type: 'sketchSelect'; data: { sketchId: number; } }
+    ```
+
 * Page Select API
-  * Change data `{ type: 'pageSelect'; data: { sketchID: number; pageID: number; } }` -> `{ type: 'pageSelect'; data: { sketchId: number; pageId: number; } }`
+  * Change data 
+
+    ```diff
+    -{ type: 'pageSelect'; data: { sketchID: number; pageID: number; } }
+    +{ type: 'pageSelect'; data: { sketchId: number; pageId: number; } }
+    ```
+
 * Sketch Create API
-  * Rename type and change data `{ type: 'addSketch'; data: string }` -> `{ type: 'sketchCreate'; data: { sketchId: number; label: string; } }`
+  * Rename type and change data 
+
+    ```diff
+    -{ type: 'addSketch'; data: string }
+    +{ type: 'sketchCreate'; data: { sketchId: number; label: string; } }
+    ```
+
 * Sketch Delete API
-  * Rename type and change data `{ type: 'deleteSketch'; data: string }` -> `{ type: 'sketchDelete'; data: { sketchId: number; } }`
+  * Rename type and change data 
+
+    ```diff
+    -{ type: 'deleteSketch'; data: string }
+    +{ type: 'sketchDelete'; data: { sketchId: number; } }
+    ```
+
 * Polygon Create API
-  * Rename type and change data `{ type: 'polycreate'; data: { id: number; segmentID: number; area: number; perimeter: number; labelcode: string; } }` -> `{ type: 'polygonCreate'; data: { sketchId: number; vectorId: number; area: number; perimeter: number; lookupCode: string; } }`
+  * Rename type and change data 
+
+    ```diff
+    -{ type: 'polycreate'; data: { id: number; segmentID: number; area: number; perimeter: number; labelcode: string; } }
+    +{ type: 'polygonCreate'; data: { sketchId: number; vectorId: number; area: number; perimeter: number; lookupCode: string; } }
+    ```
+
 * Polygon Select API
-  * Rename type and change data `{ type: 'polyclick'; data: { id: number; polyid: number; area: number; perimeter: number; labelcode: string; } }` -> `{ type: 'polygonSelect'; data: { sketchId: number; vectorId: number; area: number; perimeter: number; lookupCode: string; } }`
+  * Rename type and change data 
+
+    ```diff
+    -{ type: 'polyclick'; data: { id: number; polyid: number; area: number; perimeter: number; labelcode: string; } }
+    +{ type: 'polygonSelect'; data: { sketchId: number; vectorId: number; area: number; perimeter: number; lookupCode: string; } }
+    ```
+
 * Select Polygon API
-  * Change data `{ type: 'selectPolygon'; data: { data: { sketchID: number; segmentID: number; pageID?: number; } } }` -> `{ type: 'selectPolygon'; data: { sketchId: number; vectorId: number; pageId?: number; } }`
+  * Change data 
+
+    ```diff
+    -{ type: 'selectPolygon'; data: { data: { sketchID: number; segmentID: number; pageID?: number; } } }
+    +{ type: 'selectPolygon'; data: { sketchId: number; vectorId: number; pageId?: number; } }
+    ```
+
   * vectorId is the unique id
 * Select Polygon Failure API
-  * Rename type and change data `{ type: 'Error'; data: string; }` -> `{ type: 'selectPolygon'; data: { error: string } }`
+  * Rename type and change data 
+
+    ```diff
+    -{ type: 'Error'; data: string; }
+    +{ type: 'selectPolygon'; data: { error: string } }
+    ```
 
 ### 🐞 Fixes
 
