@@ -383,7 +383,7 @@ graph LR;
 }
 ```
 
-## Select Polygon
+## Select Polygon (Updated v3.0.0)
 
 Your app can request a polygon be selected with the "selectPolygon" message. SketchPro will send back a "selectPolygon" message in the event of failure.
 
@@ -399,8 +399,6 @@ graph LR;
 {
   type: "selectPolygon";
   data: {
-    sketchId: number;
-    pageId?: number;
     vectorId: number;
   };
 }
@@ -417,7 +415,7 @@ graph LR;
 }
 ```
 
-## Delete Polygon (Introduced v2.1.0)
+## Delete Polygon (Introduced v2.1.0, Updated v3.0.0)
 
 Your app can request a polygon be deleted with the "deletePolygon" message. SketchPro will send back a "deletePolygon" message in the event of failure.
 
@@ -434,8 +432,6 @@ graph LR;
 {
   type: "deletePolygon";
   data: {
-    sketchId: number;
-    pageId?: number;
     vectorId: number;
   };
 }

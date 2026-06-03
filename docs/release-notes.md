@@ -6,6 +6,38 @@
 
 * Update underlying application code to React allowing application to be used as hosted app (as it was prior), an HTML Widget, or a React Component
 
+* Select Polygon API
+  * Change data
+
+    ```diff
+    {
+      type: 'selectPolygon';
+      data: {
+    -   sketchId: number;
+        vectorId: number;
+    -   pageId?: number;
+      }
+    }
+    ```
+  
+  * Requires vectorId (other data properties will be ignored)
+
+* Delete Polygon API
+  * Change data
+
+    ```diff
+    {
+      type: 'deletePolygon';
+      data: {
+    -   sketchId: number;
+        vectorId: number;
+    -   pageId?: number;
+      }
+    }
+    ```
+
+  * Requires vectorId (other data properties will be ignored)
+
 ### ✨ Features
 
 * **#343:** Update Undo/Redo to be consistently located in the topmost toolbar as icons
