@@ -8,7 +8,7 @@
 
 #### APIs
 
-* Select Polygon API
+* Select Polygon Payload
   * Change data
 
     ```diff
@@ -24,7 +24,7 @@
   
   * Requires vectorId (other data properties will be ignored)
 
-* Delete Polygon API
+* Delete Polygon Payload
   * Change data
 
     ```diff
@@ -145,7 +145,7 @@
 
 #### APIs
   
-* Export SVG API
+* Export SVG Payload
   * Rename type 
 
     ```diff
@@ -159,18 +159,7 @@
     }
     ```
 
-  * Rename type 
-
-    ```diff
-    {
-    - type: 'get-image-svg';
-    + type: 'getImageSvg';
-      data: {
-        error: string;
-      };
-    }
-    ```
-
+* Export SVG Success Payload
   * Rename type 
 
     ```diff
@@ -188,7 +177,20 @@
     }
     ```
 
-* Export PNG API
+* Export SVG Failure Payload
+  * Rename type 
+
+    ```diff
+    {
+    - type: 'get-image-svg';
+    + type: 'getImageSvg';
+      data: {
+        error: string;
+      };
+    }
+    ```
+
+* Export PNG Payload
   * Rename type 
 
     ```diff
@@ -202,18 +204,7 @@
     }
     ```
 
-  * Rename type 
-
-    ```diff
-    {
-    - type: 'get-image-png';
-    + type: 'getImagePng';
-      data: {
-        error: string;
-      };
-    }
-    ```
-
+* Export PNG Success Payload
   * Rename type 
 
     ```diff
@@ -231,7 +222,20 @@
     }
     ```
 
-* Sketch Select API
+* Export PNG Failure Payload
+  * Rename type 
+
+    ```diff
+    {
+    - type: 'get-image-png';
+    + type: 'getImagePng';
+      data: {
+        error: string;
+      };
+    }
+    ```
+
+* Sketch Select Payload
   * Rename type and change data 
 
     ```diff
@@ -245,7 +249,7 @@
     }
     ```
 
-* Page Select API
+* Page Select Payload
   * Change data 
 
     ```diff
@@ -260,7 +264,7 @@
     }
     ```
 
-* Sketch Create API
+* Sketch Create Payload
   * Rename type and change data 
 
     ```diff
@@ -275,7 +279,7 @@
     }
     ```
 
-* Sketch Delete API
+* Sketch Delete Payload
   * Rename type and change data 
 
     ```diff
@@ -289,7 +293,7 @@
     }
     ```
 
-* Polygon Create API
+* Polygon Create Payload
   * Rename type and change data 
 
     ```diff
@@ -309,7 +313,7 @@
     }
     ```
 
-* Polygon Select API
+* Polygon Select Payload
   * Rename type and change data 
 
     ```diff
@@ -329,7 +333,7 @@
     }
     ```
 
-* Select Polygon API
+* Select Polygon Payload
   * Change data 
 
     ```diff
@@ -349,7 +353,7 @@
     ```
 
   * vectorId is the unique id
-* Select Polygon Failure API
+* Select Polygon Failure Payload
   * Rename type and change data 
 
     ```diff
