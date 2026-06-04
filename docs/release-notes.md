@@ -6,6 +6,8 @@
 
 * Update underlying application code to React allowing application to be used as hosted app (as it was prior), an HTML Widget, or a React Component
 
+#### APIs
+
 * Select Polygon API
   * Change data
 
@@ -113,28 +115,36 @@
 
 ### ⚠️ BREAKING CHANGES
 
+#### SDS
+
 * #421: Support for SDS version < 2.0 dropped
   * Required `$schema` is `https://schemas.opencamadata.org/2.0/data.schema.json`
   * Refer to [SDS 2.0 release notes](https://github.com/woolpert-digital-innovations/sketcher-sdk/blob/main/docs/sds/release-notes.md#20)
+
+#### Config
+
 * #422: Support for config version < 2.0 dropped
   * Required `version` is `2.0`
-* Config
-  * Rename sketchCustomFields 
 
-    ```diff
-    {
-      sketchCustomFields: {
-    -   sketchCustomFields: {
-    +   items: {
-          cField: string;
-          cValue: unknown;
-          cDataType: string;
-        }[];
-      };
-    }
-    ```
+* Rename sketchCustomFields 
 
-  * `sketchCustomFields.items` does not accept additional properties
+  ```diff
+  {
+    sketchCustomFields: {
+  -   sketchCustomFields: {
+  +   items: {
+        cField: string;
+        cValue: unknown;
+        cDataType: string;
+      }[];
+    };
+  }
+  ```
+
+* `sketchCustomFields.items` does not accept additional properties
+
+#### APIs
+  
 * Export SVG API
   * Rename type 
 
