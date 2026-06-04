@@ -122,8 +122,16 @@
   * Rename sketchCustomFields 
 
     ```diff
-    -{ sketchCustomFields: { sketchCustomFields: { cField: string; cValue: unknown; cDataType: string; }[] } }
-    +{ sketchCustomFields: { items: { cField: string; cValue: unknown; cDataType: string; }[] } }
+    {
+      sketchCustomFields: {
+    -   sketchCustomFields: {
+    +   items: {
+          cField: string;
+          cValue: unknown;
+          cDataType: string;
+        }[];
+      };
+    }
     ```
 
   * `sketchCustomFields.items` does not accept additional properties
@@ -131,100 +139,203 @@
   * Rename type 
 
     ```diff
-    -{ type: 'get-image-svg'; data: { data: <sketch data>; config: <config data> } }
-    +{ type: 'getImageSvg'; data: { data: <sketch data>; config: <config data> } }
+    {
+    - type: 'get-image-svg';
+    + type: 'getImageSvg';
+      data: {
+        data: <sketch data>;
+        config: <config data>;
+      };
+    }
     ```
 
   * Rename type 
 
     ```diff
-    -{ type: 'get-image-svg'; data: { error: string } }
-    +{ type: 'getImageSvg'; data: { error: string } }
+    {
+    - type: 'get-image-svg';
+    + type: 'getImageSvg';
+      data: {
+        error: string;
+      };
+    }
     ```
 
   * Rename type 
 
     ```diff
-    -{ type: 'get-image-svg'; data: { sketches: { id: number; page: number; name: string; data: string; }[] } }
-    +{ type: 'getImageSvg'; data: { sketches: { id: number; page: number; name: string; data: string; }[] } }
+    {
+    - type: 'get-image-svg';
+    + type: 'getImageSvg';
+      data: {
+        sketches: {
+          id: number;
+          page: number;
+          name: string;
+          data: string;
+        }[];
+      };
+    }
     ```
 
 * Export PNG API
   * Rename type 
 
     ```diff
-    -{ type: 'get-image-png'; data: { data: <sketch data>; config: <config data> } }
-    +{ type: 'getImagePng', data: { data: <sketch data>; config: <config data> } }
+    {
+    - type: 'get-image-png';
+    + type: 'getImagePng';
+      data: {
+        data: <sketch data>;
+        config: <config data>;
+      };
+    }
     ```
 
   * Rename type 
 
     ```diff
-    -{ type: 'get-image-png'; data: { error: string } }
-    +{ type: 'getImagePng', data: { error: string } }
+    {
+    - type: 'get-image-png';
+    + type: 'getImagePng';
+      data: {
+        error: string;
+      };
+    }
     ```
 
   * Rename type 
 
     ```diff
-    -{ type: 'get-image-png'; data: { sketches: { id: number; page: number; name: string; data: string; }[] } }
-    +{ type: 'getImagePng'; data: { sketches: { id: number; page: number; name: string; data: string; }[] } }
+    {
+    - type: 'get-image-png';
+    + type: 'getImagePng';
+      data: {
+        sketches: {
+          id: number;
+          page: number;
+          name: string;
+          data: string;
+        }[];
+      };
+    }
     ```
 
 * Sketch Select API
   * Rename type and change data 
 
     ```diff
-    -{ type: 'buildingSelect'; data: { buildingID: number; } }
-    +{ type: 'sketchSelect'; data: { sketchId: number; } }
+    {
+    - type: 'buildingSelect';
+    + type: 'sketchSelect';
+      data: {
+    -   buildingID: number;
+    +   sketchId: number;
+      };
+    }
     ```
 
 * Page Select API
   * Change data 
 
     ```diff
-    -{ type: 'pageSelect'; data: { sketchID: number; pageID: number; } }
-    +{ type: 'pageSelect'; data: { sketchId: number; pageId: number; } }
+    {
+      type: 'pageSelect';
+      data: {
+    -   sketchID: number;
+    -   pageID: number;
+    +   sketchId: number;
+    +   pageId: number;
+      };
+    }
     ```
 
 * Sketch Create API
   * Rename type and change data 
 
     ```diff
-    -{ type: 'addSketch'; data: string }
-    +{ type: 'sketchCreate'; data: { sketchId: number; label: string; } }
+    {
+    - type: 'addSketch';
+    + type: 'sketchCreate';
+    - data: string;
+    + data: {
+    +   sketchId: number;
+    +   label: string;
+    + };
+    }
     ```
 
 * Sketch Delete API
   * Rename type and change data 
 
     ```diff
-    -{ type: 'deleteSketch'; data: string }
-    +{ type: 'sketchDelete'; data: { sketchId: number; } }
+    {
+    - type: 'deleteSketch';
+    + type: 'sketchDelete';
+    - data: string;
+    + data: {
+    +   sketchId: number;
+    + };
+    }
     ```
 
 * Polygon Create API
   * Rename type and change data 
 
     ```diff
-    -{ type: 'polycreate'; data: { id: number; segmentID: number; area: number; perimeter: number; labelcode: string; } }
-    +{ type: 'polygonCreate'; data: { sketchId: number; vectorId: number; area: number; perimeter: number; lookupCode: string; } }
+    {
+    - type: 'polycreate';
+    + type: 'polygonCreate';
+      data: {
+    -   id: number;
+    +   sketchId: number;
+    -   segmentID: number;
+    +   vectorId: number;
+        area: number;
+        perimeter: number;
+    -   labelcode: string;
+    +   lookupCode: string;
+      };
+    }
     ```
 
 * Polygon Select API
   * Rename type and change data 
 
     ```diff
-    -{ type: 'polyclick'; data: { id: number; polyid: number; area: number; perimeter: number; labelcode: string; } }
-    +{ type: 'polygonSelect'; data: { sketchId: number; vectorId: number; area: number; perimeter: number; lookupCode: string; } }
+    {
+    - type: 'polyclick';
+    + type: 'polygonSelect';
+      data: {
+    -   id: number;
+    +   sketchId: number;
+    -   polyid: number;
+    +   vectorId: number;
+        area: number;
+        perimeter: number;
+    -   labelcode: string;
+    +   lookupCode: string;
+      };
+    }
     ```
 
 * Select Polygon API
   * Change data 
 
     ```diff
-    -{ type: 'selectPolygon'; data: { data: { sketchID: number; segmentID: number; pageID?: number; } } }
-    +{ type: 'selectPolygon'; data: { sketchId: number; vectorId: number; pageId?: number; } }
+    {
+      type: 'selectPolygon';
+      data: {
+    -   data: {
+    -     sketchID: number;
+    -     segmentID: number;
+    -     pageID?: number;
+    -   };
+    +   sketchId: number;
+    +   vectorId: number;
+    +   pageId?: number;
+      };
+    }
     ```
 
   * vectorId is the unique id
@@ -232,8 +343,14 @@
   * Rename type and change data 
 
     ```diff
-    -{ type: 'Error'; data: string; }
-    +{ type: 'selectPolygon'; data: { error: string } }
+    {
+    - type: 'Error';
+    + type: 'selectPolygon';
+    - data: string;
+    + data: {
+    +   error: string;
+    + };
+    }
     ```
 
 ### 🐞 Fixes
