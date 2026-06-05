@@ -1,5 +1,14 @@
 # Release Notes
 
+## 3.0.1 (2026-06-10)
+
+### 🐞 Fixes
+
+* **#265:** Initialize label position on load
+* **#266:** Pasting vector sets pageNum to current page
+* Allow vectors that have no label to still load
+* Render `Code` field in Edit Label Dialog when vector has no existing label values 
+
 ## 3.0.0 (2026-05-15)
 
 ### ⚠️ BREAKING CHANGES
