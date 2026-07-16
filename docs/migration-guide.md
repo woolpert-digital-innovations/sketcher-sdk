@@ -1,4 +1,25 @@
-# 0.9 -> 0.10
+# Migration path for SDS Changes
+
+## SDS 2.0 -> 2.1
+
+```js
+const documentConverted = {
+  ...document,
+  $schema: document.$schema.replace('/2.0/data.schema.json', '/2.1/data.schema.json'),
+}
+```
+
+## SDS 0.10 -> 2.0
+
+
+```js
+const documentConverted = {
+  ...document,
+  $schema: document.$schema.replace('/0.10/data.schema.json', '/2.0/data.schema.json'),
+}
+```
+
+## SDS 0.9 -> 0.10
 
 This update requires SDS 0.10 documents.  To migrate from SDS 0.9 to 0.10 documents, vectors must be assigned a unique identifier.
 

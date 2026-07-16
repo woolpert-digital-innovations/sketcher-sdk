@@ -1,4 +1,11 @@
 # Release Notes
+## [2.1](https://schemas.opencamadata.org/2.1/data.schema.json) (2026-07-15)
+
+### ✨ Features
+
+* Add `padding` property to `dimensionLabel` (`lookupCollection.*.*.*.styles.dimensionLabel.padding`)
+* Add `placement` property to `dimensionLabel` (`lookupCollection.*.*.*.styles.dimensionLabel.placement`)
+* Add `visibility` property to `dimensionLabel` (`lookupCollection.*.*.*.styles.dimensionLabel.visibility`)
 
 ## [2.0](https://schemas.opencamadata.org/2.0/data.schema.json) (2025-11-10)
 

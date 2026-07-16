@@ -1,5 +1,25 @@
 # Release Notes
 
+## 3.1.0 (2026-07-15)
+
+### ✨ Features
+* [Support Config v2.1](config/release-notes.md#21-2026-07-15)
+* [Support SDS v2.1](sds/release-notes.md#21-2026-07-15)
+* **#156:** saveSdsVersion capability **[Requires Config v2.1]**
+* **#237:** readonlyMode **[Requires Config v2.1]**
+* **#267:** add `pageId` to hosted app polygon create and select events
+* **#267:** add `pageId` to onVectorCreate and onVectorSelect response
+* **#290:** add visibility, placement, padding to dimensionLabel in config (`lookupCollection.*.*.*.styles.dimensionLabel.['visibility', 'placement', 'padding']`) **[Requires Config v2.1 and SDS v2.1]**
+* **#230:** allow subsequent SDS loads 
+
+### 🐞 Fixes
+
+* **#213:** Keys commands can be used to redraw a deleted line (`+`, `OK`)
+* **#262:** Block user interaction during saving
+* **#270:** Restrict the Dialog Mask from extending outside the editor 
+* **#279:** unset "vector modified" styles after saving
+* Give client app full control over SaveChanges failure message
+
 ## 3.0.1 (2026-06-10)
 
 ### 🐞 Fixes

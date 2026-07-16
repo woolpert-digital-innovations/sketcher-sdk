@@ -42,7 +42,7 @@ To open a new document, a new [SDS document][sds-document] object must be create
 
 ```javascript
 const data = {
-  $schema: "https://schemas.opencamadata.org/2.0/data.schema.json",
+  $schema: "https://schemas.opencamadata.org/2.1/data.schema.json",
   sketches: [
     {
       id: 1,
@@ -57,7 +57,7 @@ Sketcher requires a configuration object.  A minimal configuration must specify 
 
 ```javascript
 const config = {
-  version: "2.0",
+  version: "2.1",
   lookupCollection: {
     standard: {
       unspecified: {

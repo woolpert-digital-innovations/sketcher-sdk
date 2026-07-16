@@ -16,7 +16,7 @@ SketchPro uses the open [Sketch Data Schema](sds/guide.md) (SDS) specification t
 
 SketchPro uses the web standard Broadcast Channel API to communicate with your application. To learn more about this mechanism please refer to the following resources:
 
-- [BroacastChannel](https://developer.mozilla.org/en-US/docs/Web/API/BroadcastChannel)
+- [BroadcastChannel](https://developer.mozilla.org/en-US/docs/Web/API/BroadcastChannel)
 - [Window.postMessage()](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage)
 - [Window: message event](https://developer.mozilla.org/en-US/docs/Web/API/Window/message_event)
 
@@ -501,7 +501,7 @@ SketchPro requires an [SDS](sds/guide.md) document object to open. A minimal doc
 
 ```javascript
 {
-  $schema: "https://schemas.opencamadata.org/2.0/data.schema.json",
+  $schema: "https://schemas.opencamadata.org/2.1/data.schema.json",
   sketches: [
     {
       label: "Building #1"
@@ -517,7 +517,7 @@ SketchPro requires a configuration object to open. The configuration object shou
 ```javascript
 {
   version: "1.0",
-  lookupCllection: {
+  lookupCollection: {
     standard: {
       unspecified: {
         "*": {
@@ -588,8 +588,8 @@ interface Configuration {
     multipleLabels?: {
       /** Controls whether multiple labels can be associated with segments and vectors. */
       flag: "enabled" | "disabled";
-      /** Delimeter used to combine the multiple values into a single text.  Default is "/". */
-      delimeter?: string;
+      /** Delimiter used to combine the multiple values into a single text.  Default is "/". */
+      delimiter?: string;
     };
   };
   lookupCollection?: {
@@ -654,7 +654,7 @@ interface Configuration {
    */
   strokeWidths?: { name: string; value: number }[];
   /**
-   * Stroke dash array options.  Values must be an array of positive integer or 0 that represents a pattern of dashses and gaps.  Follows the dash array convension shared in common with SVG/HTML/CSS.
+   * Stroke dash array options.  Values must be an array of positive integer or 0 that represents a pattern of dashes and gaps.  Follows the dash array convention shared in common with SVG/HTML/CSS.
    * @example
    * [
    *   { name: "None", value: [] },
@@ -698,8 +698,8 @@ interface Style {
   /** Stroke width. Value is a positive integer or 0 */
   strokeWidth?: number;
   /**
-   * An array of positive integer or 0 that represents a pattern of dashses and gaps.
-   * Follows the dash array convension shared in common with SVG/HTML/CSS.
+   * An array of positive integer or 0 that represents a pattern of dashes and gaps.
+   * Follows the dash array convention shared in common with SVG/HTML/CSS.
    */
   strokeDashArray?: number[];
   /** Fill color. Value is a hexadecimal color code or "none" */
