@@ -11,6 +11,7 @@
 * **#267:** add `pageId` to onVectorCreate and onVectorSelect response
 * **#290:** add visibility, placement, padding to dimensionLabel in config (`lookupCollection.*.*.*.styles.dimensionLabel.['visibility', 'placement', 'padding']`) **[Requires Config v2.1 and SDS v2.1]**
 * **#230:** allow subsequent SDS loads 
+* **#288:** Update Boundary Scale dialog design
 
 ### 🐞 Fixes
 
