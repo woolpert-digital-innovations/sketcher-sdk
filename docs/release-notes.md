@@ -411,6 +411,7 @@
 
 * #422: Support SDS version 2.0
 * #421: Support config version 2.0
+* Shared Walls
 
 ## 1.1.1 (2024-11-15)
 
