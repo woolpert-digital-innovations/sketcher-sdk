@@ -1,5 +1,14 @@
 # Release Notes
 
+## 3.1.1 (2026-08-20)
+
+### 🐞 Fixes
+
+* **#321:** Save dialog's `close` button and Error dialog's `ok` button close the dialog as expected
+* **#314:** Spacebar toggles `Move Sketch` off 
+* **#316:** Prevent distortion of ellipse during flip and rotation tasks and allow ellipse to be rotated in 90 degree increments
+* **#329:** Adding a note uses next available noteId instead of length to prevent conflicting ids
+
 ## 3.1.0 (2026-07-15)
 
 ### ✨ Features
