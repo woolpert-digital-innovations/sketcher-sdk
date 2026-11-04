@@ -6,6 +6,8 @@ Python 3.12+
 
 ## Setup
 
+Inside of `root/schema`
+
 ```sh
 python3 -m venv venv
 source venv/bin/activate

@@ -1,5 +1,63 @@
 # Release Notes
 
+## 3.2.0 (2026-11-04)
+
+### ✨ Features
+
+* [Support Config v2.2](config/release-notes.md#21-2026-10-04)
+* [Support SDS v2.2](sds/release-notes.md#21-2026-10-04)
+* **#1815:** Add free-form line markup support.
+* **#281:** Add markup support to SDS v2.2.
+* **#320:** Add the ability to delete multiple lines.
+* **#394:** Note now places new notes at the center of the viewport.
+* Pressing `Enter` closes deleted lines on the selected vector.
+
+### 🐞 Fixes
+
+* **#309:** Removed the unused delimiter property from `hideCloseButton` in the config.
+* **#319:** Added undo and redo support for deleted lines.
+* **#324:** Isolated note rectangle drawing from adjacent shapes in PNG exports.
+* **#333:** Undo now restores deleted lines with their attributes.
+* **#335:** Select first vector(segment) actions now clears other selected data types (Note, Markup, Line, Node).
+* **#344:** Move Label remains enabled when switching sketches or pages.
+* **#346:** Fixed solid fills caused by inline styles in SVG exports.
+* **#357:** Deleted lines are now recognized during export.
+* **#363:** Node hit targets now remain the same size at all zoom levels.
+* **#369:** Fixed undo and redo when drawing an unclosed vector(segment).
+* **#376:** The React component now owns its shadow root.
+* **#377:** Exported the `SketchWidgetApi` type from the package.
+* **#382:** Fixed angle and distance updates in the NodeNewToolbar.
+* **#384:** Nodes can no longer be deleted while a vector(segment) is open.
+* **#387:** Fixed canvas movement when dragging a note.
+* **#388:** Avoided calling `requestRender` during rendering in `setLabelMoving`.
+* **#397:** Vectors now close when a node overlaps the start node using Keys.
+* **#397:** Fixed deleted-line resolution when a node overlaps the opposing node.
+* **#398:** Adding a new note toggles off Hide Notes.
+* **#399:** Applied the config transform when using the SDS save version.
+* **#403:** Vectors(segments) now check points in paths by default.
+* **#403:** Users are prompted to continue drawing an unclosed vector when selecting it.
+* **#414:** Fixed pinch-to-zoom on mobile devices.
+* **#418:** Preserved SVG fill continuity for embedded ellipses.
+* **#424:** Preserved sketch geometry during import.
+* Added the `ReconnectLine` undo action and line-reconnection utilities.
+* Fixed the `Close` button in Keys on Android devices.
+* Fixed vector closure after deleting lines.
+* Added undo and redo support for deleting an ellipse's start node and handle.
+* Added undo and redo support for deleting nodes connected to a deleted line.
+* Draggable dialogs can move throughout the canvas.
+* Dragging a line before or after an ellipse moves the ellipse with it.
+* Ended pointer gestures before prompting users to continue drawing.
+* Escaped functional CSS references in SVG export attributes.
+* Escaped text and attributes in SVG exports.
+* Limit vectors(segments) to only one deleted line.
+* The page selector now takes only the width of its content.
+* Removed duplicate endpoints when using Quickdraw with Keys.
+* Removed the delete-line dialog because deleted lines can be restored with undo.
+* Undoing a line deletion now closes the vector when appropriate.
+* Added undo and redo support for node and line deletion on inner rings.
+* Used the ellipse start node when `currentNode.isEllipseEndNode` is true.
+* Added a warning before deleting or adding a node before an inner ring's start node.
+
 ## 3.1.1 (2026-08-20)
 
 ### 🐞 Fixes
