@@ -1,4 +1,11 @@
 # Release Notes
+
+## [2.2](https://schemas.opencamadata.org/2.2/data.schema.json) (2026-11-04)
+
+### ✨ Features
+
+* Add `markups` property to `sketches` (`sketches[n].markups`)
+
 ## [2.1](https://schemas.opencamadata.org/2.1/data.schema.json) (2026-07-15)
 
 ### ✨ Features
