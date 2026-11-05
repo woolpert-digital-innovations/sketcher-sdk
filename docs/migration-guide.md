@@ -1,4 +1,12 @@
 # Migration path for SDS Changes
+## SDS 2.1 -> 2.2
+```js
+const documentConverted = {
+  ...document,
+  $schema: document.$schema.replace('/2.1/data.schema.json', '/2.2/data.schema.json'),
+}
+
+```
 
 ## SDS 2.0 -> 2.1
 

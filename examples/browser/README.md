@@ -42,7 +42,7 @@ To open a new document, a new [SDS document][sds-document] object must be create
 
 ```javascript
 const data = {
-  $schema: "https://schemas.opencamadata.org/2.1/data.schema.json",
+  $schema: "https://schemas.opencamadata.org/2.2/data.schema.json",
   sketches: [
     {
       id: 1,
@@ -57,7 +57,7 @@ Sketcher requires a configuration object.  A minimal configuration must specify 
 
 ```javascript
 const config = {
-  version: "2.1",
+  version: "2.2",
   lookupCollection: {
     standard: {
       unspecified: {
@@ -75,7 +75,7 @@ const config = {
 Create the Sketcher client interface:
 
 ```javascript
-const sketcher = new CAMACloud.Sketcher({ url: 'https://app.sketcher.camacloud.com/2.1' });
+const sketcher = new CAMACloud.Sketcher({ url: 'https://app.sketcher.camacloud.com/3.2' });
 ```
 
 Parameters:
