@@ -501,7 +501,7 @@ SketchPro requires an [SDS](sds/guide.md) document object to open. A minimal doc
 
 ```javascript
 {
-  $schema: "https://schemas.opencamadata.org/2.1/data.schema.json",
+  $schema: "https://schemas.opencamadata.org/2.2/data.schema.json",
   sketches: [
     {
       label: "Building #1"
